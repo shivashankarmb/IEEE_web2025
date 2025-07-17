@@ -9,8 +9,8 @@ function HomePage() {
       </div>
       <div className="welcome-text">
         <h1>WELCOME TO <span>IEEE 2025-26</span></h1>
-        <p><strong>IEEE Conference Record:</strong> 67948</p>
-        <p><strong>IEEE Conference Record:</strong> 67948</p>
+        <strong>IEEE Conference Record:</strong>
+    
 
       </div>
     </div>
