@@ -42,12 +42,10 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   margin-bottom: 20px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
   max-width: 300px;
 }
 
 .committee-card:hover {
-  transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
@@ -148,21 +146,5 @@
   
   .card-content {
     padding: 15px;
-  }
-}
-
-/* Animation for smooth loading */
-.committee-card {
-  animation: fadeInUp 0.6s ease-out;
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
   }
 }
