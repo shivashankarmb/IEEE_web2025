@@ -5,19 +5,25 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Committees from './components/Committees';
 import ForParticipants from './components/For Participants';
-// Add others like HomePage if needed
+import Footer from './components/Footer';
+
+import './App.css';
 
 function App() {
   return (
-    <Router>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/committees" element={<Committees />} />
-        <Route path="/participants" element={<ForParticipants />} />
-        {/* Add more routes like HomePage if used */}
-      </Routes>
-    </Router>
+    <div className="App">
+      <Router>
+        <Navbar />
+        <div className="main-content">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/committees" element={<Committees />} />
+            <Route path="/participants" element={<ForParticipants />} />
+          </Routes>
+        </div>
+        <Footer />
+      </Router>
+    </div>
   );
 }
 

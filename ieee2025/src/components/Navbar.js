@@ -6,8 +6,8 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="logo">
-        <img src="/iitcee-logo.png" alt="IITCEE Logo" />
-        <span>IITCEE 2026, Jan 22–23</span>
+        <img src="/iitcee-logo.png" alt="IEEE Logo" />
+        <span>IEEE 2025</span>
       </div>
       <ul className="nav-links">
         <li><Link to="/">Home</Link></li>
