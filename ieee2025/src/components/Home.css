@@ -51,10 +51,6 @@
   line-height: 1.6;
 }
 
-.highlight {
-  color: #2c9aa8;
-  font-weight: bold;
-}
 
 /* Responsive Styles */
 @media screen and (max-width: 1024px) {

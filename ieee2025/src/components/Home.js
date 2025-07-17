@@ -9,7 +9,7 @@ function Home() {
         <img src={banner} alt="BNMIT Building" className="banner-img" />
       </div>
       <section className="welcome-section">
-        <h1>WELCOME TO <span className="highlight">IITCEE 2026!</span></h1>
+        <h1>WELCOME TO <span className="highlight">IEEE 2025!</span></h1>
         <p><strong>IEEE Conference Record:</strong> <span className="highlight">67948</span></p>
         <p><strong>IEEE ISBN:</strong> <span className="highlight">979-8-3315-7746-9</span></p>
       </section>
