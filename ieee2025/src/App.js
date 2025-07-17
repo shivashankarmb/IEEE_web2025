@@ -19,6 +19,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/committees" element={<Committees />} />
             <Route path="/participants" element={<ForParticipants />} />
+            <Route path="/footer" element={<Footer />} />
           </Routes>
         </div>
         <Footer />
