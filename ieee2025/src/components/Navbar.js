@@ -1,18 +1,19 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 function Navbar() {
   return (
     <nav className="navbar">
       <div className="logo">
-        <img src="/iitcee-logo.png" alt="IEEE Logo" />
-        <span>IEEE 2025</span>
+        <img src="/iitcee-logo.png" alt="IITCEE Logo" />
+        <span>IITCEE 2026, Jan 22–23</span>
       </div>
       <ul className="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Committees</a></li>
-        <li><a href="#">For Participants</a></li>
-        <li><a href="#">Contact Us</a></li>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/committees">Committees</Link></li>
+        <li><Link to="/participants">For Participants</Link></li>
+        {/* Add more links here */}
       </ul>
     </nav>
   );
