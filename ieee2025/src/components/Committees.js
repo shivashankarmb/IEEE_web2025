@@ -10,10 +10,12 @@ function Committees() {
       <div className="committees-container">
         <h1 className="page-title">Committee</h1>
         
+        {/* First Line - Secretary */}
         <div className="committee-section">
-          <h2 className="section-title">Chief Patron</h2>
+          <h2 className="section-title">Secretary</h2>
           <div className="committee-grid">
             <div className="committee-card">
+              <div className="card-tech-border"></div>
               <div className="card-header">
                 <div className="profile-image">
                   <img 
@@ -33,15 +35,17 @@ function Committees() {
           </div>
         </div>
 
+        {/* Second Line - Director, ADP, Dean, DD */}
         <div className="committee-section">
-          <h2 className="section-title">Chief Mentor</h2>
+          <h2 className="section-title">Director, ADP, Dean, DD</h2>
           <div className="committee-grid">
             <div className="committee-card">
+              <div className="card-tech-border"></div>
               <div className="card-header">
                 <div className="profile-image">
                   <img 
-                    src="/chief-mentor-profile.jpg" 
-                    alt="Chief Mentor"
+                    src="/director-profile.jpg" 
+                    alt="Director"
                     onError={(e) => {
                       e.target.src = profilePlaceholder;
                     }}
@@ -49,22 +53,78 @@ function Committees() {
                 </div>
               </div>
               <div className="card-content">
-                <h3 className="member-name">Dr. [Name]</h3>
-                <p className="member-title">Chief Mentor, BNM Institute of Technology, Bengaluru</p>
+                <h3 className="member-name">Prof. T J Rama Murthy</h3>
+                <p className="member-title">Director, BNMIT, Bengaluru, India</p>
+              </div>
+            </div>
+            <div className="committee-card">
+              <div className="card-tech-border"></div>
+              <div className="card-header">
+                <div className="profile-image">
+                  <img 
+                    src="/adp-profile.jpg" 
+                    alt="ADP"
+                    onError={(e) => {
+                      e.target.src = profilePlaceholder;
+                    }}
+                  />
+                </div>
+              </div>
+              <div className="card-content">
+                <h3 className="member-name">Dr. S Y Kulkarni</h3>
+                <p className="member-title">Additional Director and Principal, BNMIT, Bengaluru, India</p>
+              </div>
+            </div>
+            <div className="committee-card">
+              <div className="card-tech-border"></div>
+              <div className="card-header">
+                <div className="profile-image">
+                  <img 
+                    src="/dean-profile.jpg" 
+                    alt="Dean"
+                    onError={(e) => {
+                      e.target.src = profilePlaceholder;
+                    }}
+                  />
+                </div>
+              </div>
+              <div className="card-content">
+                <h3 className="member-name">Prof. Eishwar N. Maanay</h3>
+                <p className="member-title">Dean, BNMIT, Bengaluru, India</p>
+              </div>
+            </div>
+            <div className="committee-card">
+              <div className="card-tech-border"></div>
+              <div className="card-header">
+                <div className="profile-image">
+                  <img 
+                    src="/dd-profile.jpg" 
+                    alt="DD"
+                    onError={(e) => {
+                      e.target.src = profilePlaceholder;
+                    }}
+                  />
+                </div>
+              </div>
+              <div className="card-content">
+                <h3 className="member-name">Dr. Krishnamurthy G N</h3>
+                <p className="member-title">Deputy Director, BNMIT, Bengaluru, India</p>
               </div>
             </div>
           </div>
         </div>
 
+        {/* Third Line - IEEE-PES Chair- Bangalore, HOD-EEE */}
         <div className="committee-section">
-          <h2 className="section-title">Conference Chairs</h2>
+          <h2 className="section-title">IEEE-PES Chair- Bangalore, HOD-EEE</h2>
           <div className="committee-grid">
             <div className="committee-card">
+              <div className="card-tech-border"></div>
               <div className="card-header">
                 <div className="profile-image">
                   <img 
-                    src="/conference-chair-1.jpg" 
-                    alt="Conference Chair 1"
+                    src="/ieee-pes-chair-profile.jpg" 
+                    alt="IEEE-PES Chair Bangalore"
                     onError={(e) => {
                       e.target.src = profilePlaceholder;
                     }}
@@ -72,16 +132,17 @@ function Committees() {
                 </div>
               </div>
               <div className="card-content">
-                <h3 className="member-name">Dr. [Name]</h3>
-                <p className="member-title">Conference Chair</p>
+                <h3 className="member-name">Dr. [IEEE-PES Chair Name]</h3>
+                <p className="member-title">IEEE-PES Chair - Bangalore</p>
               </div>
             </div>
             <div className="committee-card">
+              <div className="card-tech-border"></div>
               <div className="card-header">
                 <div className="profile-image">
                   <img 
-                    src="/conference-chair-2.jpg" 
-                    alt="Conference Chair 2"
+                    src="/hod-eee-profile.jpg" 
+                    alt="HOD-EEE"
                     onError={(e) => {
                       e.target.src = profilePlaceholder;
                     }}
@@ -89,22 +150,24 @@ function Committees() {
                 </div>
               </div>
               <div className="card-content">
-                <h3 className="member-name">Dr. [Name]</h3>
-                <p className="member-title">Conference Chair</p>
+                <h3 className="member-name">Dr. [HOD Name]</h3>
+                <p className="member-title">HOD-EEE</p>
               </div>
             </div>
           </div>
         </div>
 
+        {/* Fourth Line - IEEE Faculty Advisor, IEEE PES Hackathon coordinator */}
         <div className="committee-section">
-          <h2 className="section-title">Technical Program Committee</h2>
+          <h2 className="section-title">IEEE Faculty Advisor, IEEE PES Hackathon Coordinator</h2>
           <div className="committee-grid">
             <div className="committee-card">
+              <div className="card-tech-border"></div>
               <div className="card-header">
                 <div className="profile-image">
                   <img 
-                    src="/tpc-chair-1.jpg" 
-                    alt="TPC Member 1"
+                    src="/ieee-faculty-advisor-profile.jpg" 
+                    alt="IEEE Faculty Advisor"
                     onError={(e) => {
                       e.target.src = profilePlaceholder;
                     }}
@@ -112,16 +175,17 @@ function Committees() {
                 </div>
               </div>
               <div className="card-content">
-                <h3 className="member-name">Dr. [Name]</h3>
-                <p className="member-title">Technical Program Chair</p>
+                <h3 className="member-name">Dr. [Faculty Advisor Name]</h3>
+                <p className="member-title">IEEE Faculty Advisor</p>
               </div>
             </div>
             <div className="committee-card">
+              <div className="card-tech-border"></div>
               <div className="card-header">
                 <div className="profile-image">
                   <img 
-                    src="/tpc-chair-2.jpg" 
-                    alt="TPC Member 2"
+                    src="/hackathon-coordinator-profile.jpg" 
+                    alt="IEEE PES Hackathon Coordinator"
                     onError={(e) => {
                       e.target.src = profilePlaceholder;
                     }}
@@ -129,22 +193,24 @@ function Committees() {
                 </div>
               </div>
               <div className="card-content">
-                <h3 className="member-name">Dr. [Name]</h3>
-                <p className="member-title">Technical Program Co-Chair</p>
+                <h3 className="member-name">Dr. [Coordinator Name]</h3>
+                <p className="member-title">IEEE PES Hackathon Coordinator</p>
               </div>
             </div>
           </div>
         </div>
 
+        {/* Fifth Line - Students IEEE PES student chair, co-chair */}
         <div className="committee-section">
-          <h2 className="section-title">Organizing Committee</h2>
+          <h2 className="section-title">Students IEEE PES Student Chair, Co-Chair</h2>
           <div className="committee-grid">
             <div className="committee-card">
+              <div className="card-tech-border"></div>
               <div className="card-header">
                 <div className="profile-image">
                   <img 
-                    src="/organizing-chair-1.jpg" 
-                    alt="Organizing Member 1"
+                    src="/student-chair-profile.jpg" 
+                    alt="IEEE PES Student Chair"
                     onError={(e) => {
                       e.target.src = profilePlaceholder;
                     }}
@@ -152,16 +218,17 @@ function Committees() {
                 </div>
               </div>
               <div className="card-content">
-                <h3 className="member-name">Dr. [Name]</h3>
-                <p className="member-title">Organizing Chair</p>
+                <h3 className="member-name">[Student Chair Name]</h3>
+                <p className="member-title">IEEE PES Student Chair</p>
               </div>
             </div>
             <div className="committee-card">
+              <div className="card-tech-border"></div>
               <div className="card-header">
                 <div className="profile-image">
                   <img 
-                    src="/organizing-chair-2.jpg" 
-                    alt="Organizing Member 2"
+                    src="/student-co-chair-profile.jpg" 
+                    alt="IEEE PES Student Co-Chair"
                     onError={(e) => {
                       e.target.src = profilePlaceholder;
                     }}
@@ -169,8 +236,8 @@ function Committees() {
                 </div>
               </div>
               <div className="card-content">
-                <h3 className="member-name">Dr. [Name]</h3>
-                <p className="member-title">Organizing Co-Chair</p>
+                <h3 className="member-name">[Student Co-Chair Name]</h3>
+                <p className="member-title">IEEE PES Student Co-Chair</p>
               </div>
             </div>
           </div>
