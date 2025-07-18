@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #2773c0;
+  background-color: #a4cbe3; /* Quinic background tone */
   padding: 10px 30px;
   color: white;
   position: fixed;
@@ -12,6 +12,7 @@
   z-index: 1000;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Logo section */
@@ -22,13 +23,18 @@
 
 .logo img {
   height: 40px;
+  width: 40px;
   margin-right: 10px;
   vertical-align: middle;
+  border-radius: 50%; /* Circular image */
+  object-fit: cover;
+  border: 2px solid white;
 }
 
 .logo span {
   font-weight: bold;
   font-size: 18px;
+  color: white;
 }
 
 /* Desktop nav links */
@@ -44,10 +50,12 @@
   color: white;
   text-decoration: none;
   font-weight: 500;
+  transition: color 0.3s, text-decoration 0.3s;
 }
 
 .nav-links li a:hover {
   text-decoration: underline;
+  color: #003366; /* Darker hover effect */
 }
 
 /* Mobile menu icon */
@@ -86,7 +94,7 @@
   font-weight: 500;
 }
 
-/* Scrollbar customization to match background */
+/* Scrollbar customization */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;

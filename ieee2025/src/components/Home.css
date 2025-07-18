@@ -1,3 +1,26 @@
+/* ✨ Animated Gradient Background on Body ✨ */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(-45deg, #e0f7fa, #fce4ec, #f3e5f5, #fffde7);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+}
+
+/* 🌈 Gradient Animation Keyframes */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 /* Allow scrolling both directions */
 .scroll-container {
   overflow: auto;
@@ -15,6 +38,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: transparent;
 }
 
 /* Banner Styles */
@@ -32,14 +56,17 @@
   display: block;
 }
 
-/* Welcome Section */
+/* Welcome Section with Glass Style */
 .welcome-section {
-  background-color: #f8f8f0;
+  background: rgba(255, 255, 255, 0.85);
   text-align: center;
   padding: 60px 30px;
   box-sizing: border-box;
   width: 100%;
   border-top: 3px solid #3799a0;
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
 }
 
 .welcome-section h1 {
@@ -71,7 +98,6 @@
   color: #3799a0;
   font-weight: 600;
 }
-
 
 /* Responsive Styles */
 @media screen and (max-width: 1024px) {
