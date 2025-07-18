@@ -8,7 +8,7 @@ function Committees() {
   return (
     <div className="committees">
       <div className="committees-container">
-        <h1 className="page-title">Chairs</h1>
+        <h1 className="page-title">Committee</h1>
         
         <div className="committee-section">
           <h2 className="section-title">Chief Patron</h2>
