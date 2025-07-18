@@ -6,6 +6,7 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   width: 100%;
   margin: 0;
+  overflow-x: hidden;
 }
 
 .committees-container {
