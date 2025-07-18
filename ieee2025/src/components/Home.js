@@ -9,9 +9,7 @@ function Home() {
         <img src={banner} alt="BNMIT Building" className="banner-img" />
       </div>
       <section className="welcome-section">
-        <h1>WELCOME TO IEEE 2025!</h1>
-        <p><strong>IEEE Conference Record:</strong></p>
-        <p><strong>IEEE ISBN:</strong></p>
+        <h1>WELCOME TO <span className="highlight">IEEE 2025!</span></h1>
       </section>
     </div>
   );
