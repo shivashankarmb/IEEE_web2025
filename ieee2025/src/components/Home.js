@@ -57,10 +57,7 @@ function Home() {
 
             <div className="welcome-text">
               <h1>Welcome to BNMIT IEEE PES Hardware Hackathon–Electrothon 2025</h1>
-              <p>
-                <strong>BNMIT IEEE Student Branch</strong> welcomes all participants, mentors, and
-                leaders. Explore, innovate, and lead with us toward a smarter future.
-              </p>
+              
               <a
                 href="https://r10.ieee.org/bangalore-pes/"
                 className="ieee-link"
