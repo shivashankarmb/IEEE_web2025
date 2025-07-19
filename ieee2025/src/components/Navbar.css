@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #004466;
+ background: linear-gradient(90deg, #757bac, #2ed6e5);
   padding: 10px 20px;
   color: white;
   position: relative;
@@ -15,7 +15,11 @@
 
 .logo img {
   height: 40px;
+  width: 40px;
   margin-right: 10px;
+  border-radius: 50%; /* Make the image circular */
+  object-fit: cover;   /* Ensure image fits inside the circle */
+  border: 2px solid white; /* Optional: Add white border for better visibility */
 }
 
 .logo span {

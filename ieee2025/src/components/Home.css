@@ -6,7 +6,7 @@ body {
   overflow: auto;
 }
 
-/* Navbar Styling with Animated Professional Gradient */
+/* Navbar Styling */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -22,22 +22,15 @@ body {
   z-index: 1000;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 @keyframes navbarGradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
-/* Carousel Wrapper with Animated Gradient */
+/* Carousel Styling */
 .multi-carousel-wrapper {
   width: 100vw;
   padding: 40px 0;
@@ -47,15 +40,9 @@ body {
 }
 
 @keyframes carouselGradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 .multi-carousel-img {
@@ -64,10 +51,9 @@ body {
   object-fit: cover;
   border-radius: 8px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
-  margin: 0 0px;
 }
 
-/* ✅ Hide Slick Arrows */
+/* Slick Slider */
 .slick-prev,
 .slick-next {
   display: none !important;
@@ -85,34 +71,26 @@ body {
 /* Welcome Section */
 .welcome-section {
   text-align: center;
-  padding: 3rem 1rem;
-  background: #fff;
+  padding: 40px 20px;
+  background-color: #f4f4f4;
   color: #333;
 }
 
-.welcome-section h1 {
-  font-size: 2.8rem;
-}
-
-.highlight {
-  color: #0066cc;
-  font-weight: bold;
-}
-
-.welcome-section p {
-  font-size: 1.2rem;
-  margin-top: 1rem;
-}
-
-/* 👇 Flexbox for horizontal logo layout */
 .welcome-logos {
   display: flex;
+  justify-content: space-around;
   align-items: center;
-  justify-content: space-between;
-  gap: 30px;
+  flex-wrap: wrap;
   max-width: 1350px;
   margin: 0 auto;
-  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.logo-with-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .side-logo {
@@ -120,23 +98,51 @@ body {
   height: auto;
 }
 
-.welcome-text {
-  flex: 1;
-  padding: 0 20px;
+.logo-label {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: bold;
 }
 
-/* Responsive */
+.welcome-text {
+  flex: 1;
+  max-width: 700px;
+  padding: 20px;
+  text-align: center;
+}
+
+.welcome-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.welcome-text p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.ieee-link {
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #0073e6;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.ieee-link:hover {
+  text-decoration: underline;
+}
+
+/* External Link Wrapper */
+.external-link {
+  margin-top: 15px;
+}
+
+/* Responsive Design */
 @media screen and (max-width: 768px) {
   .multi-carousel-img {
     height: 300px;
-  }
-
-  .welcome-section h1 {
-    font-size: 2rem;
-  }
-
-  .welcome-section p {
-    font-size: 1rem;
   }
 
   .welcome-logos {
@@ -152,5 +158,17 @@ body {
   .welcome-text {
     padding: 0;
     text-align: center;
+  }
+
+  .welcome-text h1 {
+    font-size: 2rem;
+  }
+
+  .welcome-text p {
+    font-size: 1rem;
+  }
+
+  .ieee-link {
+    font-size: 0.95rem;
   }
 }

@@ -13,22 +13,6 @@ import 'slick-carousel/slick/slick-theme.css';
 function Home() {
   const scrollRef = useRef();
 
-  const scrollLeft = () => {
-    scrollRef.current.scrollBy({ left: -300, behavior: 'smooth' });
-  };
-
-  const scrollRight = () => {
-    scrollRef.current.scrollBy({ left: 300, behavior: 'smooth' });
-  };
-
-  const scrollUp = () => {
-    scrollRef.current.scrollBy({ top: -300, behavior: 'smooth' });
-  };
-
-  const scrollDown = () => {
-    scrollRef.current.scrollBy({ top: 300, behavior: 'smooth' });
-  };
-
   const settings = {
     dots: true,
     infinite: true,
@@ -51,6 +35,7 @@ function Home() {
   return (
     <div className="scrollable-content" ref={scrollRef}>
       <div className="home">
+        {/* Image Slider */}
         <div className="multi-carousel-wrapper">
           <Slider {...settings}>
             <div>
@@ -62,20 +47,34 @@ function Home() {
           </Slider>
         </div>
 
-        {/* 👇 Welcome Section with Left and Right Logos */}
+        {/* Welcome Section with Logos and Text */}
         <section className="welcome-section">
           <div className="welcome-logos">
-            <img src={img3} alt="BNMIT Logo" className="side-logo" />
+            <div className="logo-with-label">
+              <img src={img3} alt="BNMIT Logo" className="side-logo" />
+              <p className="logo-label">BNMIT Chapter</p>
+            </div>
+
             <div className="welcome-text">
-              <h1>
-                Welcome to BNMIT IEEE PES Hardware Hackathon –Electrothon-2025
-              </h1>
+              <h1>Welcome to BNMIT IEEE PES Hardware Hackathon–Electrothon 2025</h1>
               <p>
                 <strong>BNMIT IEEE Student Branch</strong> welcomes all participants, mentors, and
                 leaders. Explore, innovate, and lead with us toward a smarter future.
               </p>
+              <a
+                href="https://r10.ieee.org/bangalore-pes/"
+                className="ieee-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Visit IEEE PES Bangalore Chapter →
+              </a>
             </div>
-            <img src={img4} alt="IEEE Logo" className="side-logo" />
+
+            <div className="logo-with-label">
+              <img src={img4} alt="IEEE Logo" className="side-logo" />
+              <p className="logo-label">BNMIT IEEE PES Student Chapter</p>
+            </div>
           </div>
         </section>
       </div>
