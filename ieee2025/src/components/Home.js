@@ -67,7 +67,9 @@ function Home() {
           <div className="welcome-logos">
             <img src={img3} alt="BNMIT Logo" className="side-logo" />
             <div className="welcome-text">
-              <h1>WELCOME TO IEEE 2025</h1>
+              <h1>
+                Welcome to BNMIT IEEE PES Hardware Hackathon –Electrothon-2025
+              </h1>
               <p>
                 <strong>BNMIT IEEE Student Branch</strong> welcomes all participants, mentors, and
                 leaders. Explore, innovate, and lead with us toward a smarter future.
