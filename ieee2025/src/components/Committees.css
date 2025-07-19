@@ -21,7 +21,7 @@ html, body {
 .committees-container {
   max-width: 100%;
   margin: 0;
-  padding: 20px 30px;
+  padding: 0px 30px;
   width: 100%;
   box-sizing: border-box;
   overflow-x: hidden;
