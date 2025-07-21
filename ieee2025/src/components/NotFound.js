@@ -15,8 +15,8 @@ function NotFound() {
           <Link to="/" className="home-button">
             Go Back Home
           </Link>
-          <Link to="/committees" className="committees-button">
-            View Committees
+          <Link to="/themes" className="committees-button">
+            View Themes
           </Link>
         </div>
         <div className="error-illustration">
