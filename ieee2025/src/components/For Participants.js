@@ -38,7 +38,7 @@ function ForParticipants() {
         <div className="content-section">
           <h2 className="section-title">Abstract Submission for IEEE Electrothon-2025</h2>
           <a 
-            href="https://docs.google.com/forms/d/15uRKUb0ZzfKYWFJhVHmIdLjJvOQXgXnzMX3AEnB3u-g/viewform" 
+            href="https://docs.google.com/document/d/1ojqF92N3CXGRNmXVpcasnNpNZsicgxHZ/edit" 
             className="action-button"
             target="_blank"
             rel="noopener noreferrer"
