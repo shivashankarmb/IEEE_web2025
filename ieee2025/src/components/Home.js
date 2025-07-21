@@ -6,6 +6,8 @@ import img1 from '../assets/bnmit-building.jpg';
 import img2 from '../assets/BNMIT-S-Building.jpg';
 import img3 from '../assets/bnmitlogo.jpg';         // BNMIT logo
 import img4 from '../assets/bnmitieeelogo.jpg';     // IEEE logo
+import img5 from '../assets/Audi Block BNMITbuilding Photo.jpg'; // Audi Block BNMIT Building
+import img6 from '../assets/Auditorium_APjSir event photo.png'; // S Building BNMIT
 
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -43,6 +45,12 @@ function Home() {
             </div>
             <div>
               <img src={img2} alt="BNMIT S Building" className="multi-carousel-img" />
+            </div>
+            <div>
+              <img src={img5} alt="BNMIT Audi Building" className="multi-carousel-img" />
+            </div>
+            <div>
+              <img src={img6} alt="BNMIT S Building" className="multi-carousel-img" />
             </div>
           </Slider>
         </div>
