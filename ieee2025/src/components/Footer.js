@@ -29,8 +29,10 @@ function Footer() {
 
         <div className="footer-section">
           <h3>Website developed by</h3>
-          <p><span className="highlight">SHIVASHANKARA M B</span></p>
+          <p><span className="highlight">Navya A</span></p>
+          <p><span className="highlight">C M Kavana</span></p>
           <p><span className="highlight">V SAISHIVRAM</span></p>
+          <p><span className="highlight">ShivaShankara M B</span></p>
           <p>Department Of ISE</p>
         </div>
       </div>
