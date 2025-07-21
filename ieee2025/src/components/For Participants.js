@@ -1,5 +1,7 @@
 import React from 'react';
-import './For Participants.css'; // Make sure the filename matches exactly
+import './For Participants.css'; 
+
+
 
 function ForParticipants() {
   return (
@@ -7,36 +9,48 @@ function ForParticipants() {
       <div className="participants-container">
         <h1 className="page-title">For Participants</h1>
 
+        {/* Poster Section */}
         <div className="content-section">
-          <h2 className="section-title">The registration form link for IEEE Conference</h2>
-          <button className="action-button">Click here for registering</button>
+          <h2 className="section-title">Poster IEEE Electrothon-2025</h2>
+          <a 
+            href="/poster.pdf" 
+            className="action-button" 
+            download="IEEE_Electrothon_2025_Poster.pdf"
+          >
+            Download Poster
+          </a>
         </div>
 
+        {/* Registration Section */}
         <div className="content-section">
-          <h2 className="section-title">Presentation Schedule for IEEE 2025:</h2>
-          <button className="action-button">Download Presentation Schedule</button>
+          <h2 className="section-title">Registration Link for IEEE Electrothon-2025</h2>
+          <a 
+            href="https://docs.google.com/forms/d/15uRKUb0ZzfKYWFJhVHmIdLjJvOQXgXnzMX3AEnB3u-g/viewform" 
+            className="action-button"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Click Here to Register
+          </a>
         </div>
 
+        {/* Abstract Submission Section */}
         <div className="content-section">
-          <h2 className="section-title">Presentation Template for ICIITCEE 2025:</h2>
-          <p className="notice">
-            *Important Notice for Presenters: All participants are required to use the official PowerPoint Template for their presentations at the IEEE International Conference*
-          </p>
-          <button className="action-button">Download Presentation Template</button>
+          <h2 className="section-title">Abstract Submission for IEEE Electrothon-2025</h2>
+          <a 
+            href="https://docs.google.com/forms/d/15uRKUb0ZzfKYWFJhVHmIdLjJvOQXgXnzMX3AEnB3u-g/viewform" 
+            className="action-button"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Submit Abstract
+          </a>
         </div>
 
+        {/* Schedule Info */}
         <div className="content-section">
-          <h2 className="section-title"><span className="icon"></span> Presentation Guidelines:</h2>
-          <ul className="guidelines-list">
-            <li>Slide Limit: Maximum of 8 to 10 slides.</li>
-          </ul>
-        </div>
-
-        <div className="content-section">
-          <h2 className="section-title">Content Focus:</h2>
-          <ul className="content-list">
-            <li>Focus on key findings and contributions</li>
-          </ul>
+          <h2 className="section-title">Presentation Schedule for IEEE 2025</h2>
+          <p>Will be updated soon</p>
         </div>
       </div>
     </div>
