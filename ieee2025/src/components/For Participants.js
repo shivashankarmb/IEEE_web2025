@@ -11,7 +11,7 @@ function ForParticipants() {
           <h2 className="section-title">Poster IEEE Electrothon-2025</h2>
           <div className="button-wrapper">
             <a 
-              href="https://raw.githubusercontent.com/shivashankarmb/IEEE_web2025/main/ieee2025/public/poster.pdf" 
+              href=" https://raw.githubusercontent.com/shivashankarmb/IEEE_web2025/main/ieee2025/public/poster.pdf" 
               className="action-button" 
               target="_blank" 
               rel="noopener noreferrer"
