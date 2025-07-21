@@ -7,6 +7,8 @@ import deanPhoto from '../assets/Dean.jpg';
 import deputyDirectorPhoto from '../assets/Dep_Director_BNMIT.webp';
 import hodeeePhoto from '../assets/venkatesha_HoD_EEE.webp';
 import facultyAdvisorPhoto from '../assets/Madhu_BNMIT.jpg';
+import studentChairPhoto from '../assets/Student_chair.jpg';
+import studentcoChairPhoto from '../assets/Student_Co_Chair.jpg';
 
 function Committees() {
   // Placeholder for profile images
@@ -211,7 +213,7 @@ Faculty Advisor, BNMIT IEEE PES Student Chapter</p>
               <div className="card-header">
                 <div className="profile-image">
                   <img 
-                    src="/student-chair-profile.jpg" 
+                    src={studentChairPhoto}
                     alt="IEEE PES Student Chair"
                     onError={(e) => {
                       e.target.src = profilePlaceholder;
@@ -220,8 +222,8 @@ Faculty Advisor, BNMIT IEEE PES Student Chapter</p>
                 </div>
               </div>
               <div className="card-content">
-                <h3 className="member-name">[Student Chair Name]</h3>
-                <p className="member-title">IEEE PES Student Chair</p>
+                <h3 className="member-name">Deekshitha K</h3>
+                <p className="member-title">IEEE BNMIT Student Chair</p>
               </div>
             </div>
             <div className="committee-card">
@@ -229,7 +231,7 @@ Faculty Advisor, BNMIT IEEE PES Student Chapter</p>
               <div className="card-header">
                 <div className="profile-image">
                   <img 
-                    src="/student-co-chair-profile.jpg" 
+                    src={studentcoChairPhoto} 
                     alt="IEEE PES Student Co-Chair"
                     onError={(e) => {
                       e.target.src = profilePlaceholder;
@@ -238,8 +240,8 @@ Faculty Advisor, BNMIT IEEE PES Student Chapter</p>
                 </div>
               </div>
               <div className="card-content">
-                <h3 className="member-name">[Student Co-Chair Name]</h3>
-                <p className="member-title">IEEE PES Student Co-Chair</p>
+                <h3 className="member-name">Shaswatha Varadhan</h3>
+                <p className="member-title">IEEE BNMIT Student Co-Chair</p>
               </div>
             </div>
           </div>
