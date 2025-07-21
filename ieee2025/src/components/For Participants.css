@@ -1,4 +1,3 @@
-/* For Participants.css */
 .participants {
   min-height: 100vh;
   background-color: #f0f0f0;
@@ -26,6 +25,11 @@
   margin-bottom: 40px;
 }
 
+/* 🆕 Wrapper to align buttons to the left */
+.button-wrapper {
+  text-align: left;
+}
+
 .section-title {
   font-size: 20px;
   font-weight: bold;
@@ -42,9 +46,9 @@
   color: #4a90e2;
 }
 
-/* Action Button Styles - Remove underline and style anchor like button */
+/* Button styling */
 .action-button {
-  background-color: #3799a0;
+   background: linear-gradient(135deg, #4a90e2, #00c6ff);
   color: white;
   border: none;
   padding: 12px 24px;
@@ -54,8 +58,7 @@
   cursor: pointer;
   margin-bottom: 20px;
   display: inline-block;
-  text-decoration: none; /* ✅ Removes underline */
-  text-align: center;
+  text-decoration: none;
   transition: background-color 0.3s ease;
 }
 
