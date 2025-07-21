@@ -8,6 +8,8 @@ import ForParticipants from './components/For Participants';
 import Sponsors from './components/Sponsors';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import NotFound from './components/NotFound';
+
 
 import './App.css';
 
@@ -24,6 +26,9 @@ function App() {
             <Route path="/sponsors" element={<Sponsors />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/footer" element={<Footer />} />
+
+
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
         <Footer />
