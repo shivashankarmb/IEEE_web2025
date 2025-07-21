@@ -8,7 +8,7 @@ function Footer() {
       <div className="footer-container">
         <div className="footer-section">
           <h3>Quick Links</h3>
-          <a href="#">➜ Route Map</a>
+          <a href="https://www.google.com/maps/place/BNM+Institute+of+Technology/@12.9219513,77.564949,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae1581f297e32d:0xe9a257cf4383019e!8m2!3d12.9219513!4d77.5671377!16s%2Fm%2F0cr39lq">➜ Route Map</a>
         </div>
 
         <div className="footer-section">
