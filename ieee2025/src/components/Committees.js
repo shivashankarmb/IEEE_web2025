@@ -7,6 +7,7 @@ import deanPhoto from '../assets/Dean.jpg';
 import deputyDirectorPhoto from '../assets/Dep_Director_BNMIT.webp';
 import hodeeePhoto from '../assets/venkatesha_HoD_EEE.webp';
 import facultyAdvisorPhoto from '../assets/Madhu_BNMIT.jpg';
+import hackathonCoordinatorPhoto from '../assets/Hackathon_Coordinator.jpg'; // Placeholder for Hackathon Coordinator
 import studentChairPhoto from '../assets/Student_chair.jpg';
 import studentcoChairPhoto from '../assets/Student_Co_Chair.jpg';
 
@@ -189,7 +190,7 @@ Faculty Advisor, BNMIT IEEE PES Student Chapter</p>
               <div className="card-header">
                 <div className="profile-image">
                   <img 
-                    src="/hackathon-coordinator-profile.jpg" 
+                    src={hackathonCoordinatorPhoto}
                     alt="IEEE PES Hackathon Coordinator"
                     onError={(e) => {
                       e.target.src = profilePlaceholder;
@@ -198,8 +199,11 @@ Faculty Advisor, BNMIT IEEE PES Student Chapter</p>
                 </div>
               </div>
               <div className="card-content">
-                <h3 className="member-name">Dr. [Coordinator Name]</h3>
-                <p className="member-title">IEEE PES Hackathon Coordinator</p>
+                <h3 className="member-name">Punith Kumar S M</h3>
+                <p className="member-title">
+  Execom Member,IEEE PES Bangalore Chapter,
+  Greaves Electric Mobility<br/> (IEEE PES Hackathon coordinator)
+</p>
               </div>
             </div>
           </div>
