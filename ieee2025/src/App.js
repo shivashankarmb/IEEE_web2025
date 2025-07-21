@@ -6,6 +6,8 @@ import Home from './components/Home';
 import Committees from './components/Committees';
 import ForParticipants from './components/For Participants';
 import Footer from './components/Footer';
+import NotFound from './components/NotFound';
+
 
 import './App.css';
 
@@ -20,6 +22,9 @@ function App() {
             <Route path="/committees" element={<Committees />} />
             <Route path="/participants" element={<ForParticipants />} />
             <Route path="/footer" element={<Footer />} />
+
+
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
         <Footer />
