@@ -14,7 +14,7 @@ function Navbar() {
     <nav className="navbar">
       <div className="logo">
         <img src={ieeelogo} alt="IEEE Logo" />
-        <span>Electrothon-2029999</span>
+        <span>Electrothon-2025</span>
       </div>
 
       <ul className={`nav-links ${isMobileMenuOpen ? 'active' : ''}`}>
