@@ -82,7 +82,7 @@ function Footer() {
           <h3>Website developed by</h3>
           <p><span className="highlight">Navya A</span></p>
           <p><span className="highlight">C M Kavana</span></p>
-          <p><span className="highlight">V Sashivram</span></p>
+          <p><span className="highlight">V Saishivram</span></p>
           <p><span className="highlight">ShivaShankara M B</span></p>
           <p>Department Of ISE</p>
         </div>
