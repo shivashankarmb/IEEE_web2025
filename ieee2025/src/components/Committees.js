@@ -1,6 +1,7 @@
 import React from 'react';
 import './Committees.css';
 
+import chairmanPhoto from '../assets/Chairman.jpg';
 import tjrPhoto from '../assets/TJR Sir Photo.jpg';
 import adpPhoto from '../assets/ADP_BNMIT.jpg';
 import deanPhoto from '../assets/Dean.jpg';
@@ -29,7 +30,7 @@ function Committees() {
               <div className="card-header">
                 <div className="profile-image">
                   <img 
-                    src="/narayan-rao-profile.jpg" 
+                    src={chairmanPhoto}
                     alt="Sri. Narayan Rao R. Maanay"
                     onError={(e) => {
                       e.target.src = profilePlaceholder;
