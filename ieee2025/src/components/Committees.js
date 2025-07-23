@@ -273,6 +273,82 @@ Faculty Advisor, BNMIT IEEE PES Student Chapter</p>
             </div>
           </div>
         </div>
+       {/* IEEE Members Table Section */}
+        <div className="ieee-members-section">
+          <h2 className="ieee-members-title">IEEE Members</h2>
+          <div className="ieee-members-table-container">
+            <table className="ieee-members-table">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Semester & Branch</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Aditi R Prasad</td>
+                  <td>5th sem EEE</td>
+                </tr>
+                <tr>                  
+                  <td>Gowri A S</td>
+                  <td>5th sem EEE</td>
+                </tr>
+                <tr>                  
+                  <td>Sanjana Sulibhavi</td>
+                  <td>7th sem EEE</td>
+                </tr>
+                <tr>                  
+                  <td>Shreelakshmi P</td>
+                  <td>7th sem EEE</td>
+                </tr>
+                <tr>                  
+                  <td>Nimisha T</td>
+                  <td>7th sem EEE</td>
+                </tr>
+                <tr>
+                  <td>Revanth BV</td>
+                  <td>7th sem EEE</td>
+                </tr>
+                <tr>                  
+                  <td>Sai Rashmi B J</td>
+                  <td>7th sem EEE</td>
+                </tr>
+                <tr>                  
+                  <td>Sanjana Alladwar</td>
+                  <td>7th sem EEE</td>
+                </tr>
+                <tr>                  
+                  <td>Ajay KC</td>
+                  <td>5th sem EEE</td>
+                </tr>
+                <tr>                  
+                  <td>Darshan Gowda S</td>
+                  <td>5th sem EEE</td>
+                </tr>
+                <tr>                  
+                  <td>Gagan Kumar Reddy</td>
+                  <td>5th sem EEE</td>
+                </tr>
+                <tr>                  
+                  <td>Jeevan C S</td>
+                  <td>5th sem EEE</td>
+                </tr>
+                <tr>                  
+                  <td>Sowmya.m.kumarji</td>
+                  <td>5th sem EEE</td>
+                </tr>
+                <tr>                  
+                  <td>Shreya G Kulkarni</td>
+                  <td>5th sem EEE</td>
+                </tr>
+                <tr>                  
+                  <td>Sinchana R M</td>
+                  <td>5th sem EEE</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
     </div>
   );

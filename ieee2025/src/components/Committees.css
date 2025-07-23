@@ -280,3 +280,195 @@ html, body {
     height: 80px;
   }
 }
+
+
+/* IEEE Members Table Section */
+.ieee-members-section {
+  margin-top: 60px;
+  margin-bottom: 40px;
+  box-sizing: border-box;
+}
+
+.ieee-members-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #171819;
+  margin-bottom: 30px;
+  text-align: left;
+  border-bottom: 3px solid #171819;
+  padding-bottom: 15px;
+  box-sizing: border-box;
+  font-size: 36px;
+}
+
+.ieee-members-table-container {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 0 ;
+  max-width: 900px;
+  box-sizing: border-box;
+}
+
+.ieee-members-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+.ieee-members-table thead {
+  background: linear-gradient(135deg, #1976d2, #1565c0);
+  color: white;
+}
+
+.ieee-members-table th {
+  padding: 18px 20px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  border: none;
+  box-sizing: border-box;
+}
+
+.ieee-members-table th:first-child {
+  text-align: center;
+  width: 80px;
+}
+
+.ieee-members-table th:nth-child(2) {
+  text-align: center;
+  width: 80px;
+}
+
+.ieee-members-table th:nth-child(3) {
+  width: 35%;
+}
+
+.ieee-members-table tbody tr {
+  transition: all 0.3s ease;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.ieee-members-table tbody tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.ieee-members-table tbody tr:hover {
+  background-color: #e3f2fd;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(25, 118, 210, 0.15);
+}
+
+.ieee-members-table td {
+  padding: 16px 20px;
+  font-size: 1rem;
+  color: #2c3e50;
+  border: none;
+  box-sizing: border-box;
+}
+
+.ieee-members-table td:first-child {
+  text-align: center;
+  font-weight: 600;
+  color: #1976d2;
+  background-color: rgba(25, 118, 210, 0.05);
+}
+
+.ieee-members-table td:nth-child(2) {
+  font-weight: 500;
+  color: #171819;
+}
+
+.ieee-members-table td:nth-child(3) {
+  color: #666;
+  font-style: italic;
+}
+
+/* Responsive Design for IEEE Members Table */
+@media (max-width: 768px) {
+  .ieee-members-section {
+    margin-top: 40px;
+    padding: 0 10px;
+  }
+
+  .ieee-members-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .ieee-members-table-container {
+    margin: 0 5px;
+    border-radius: 8px;
+  }
+
+  .ieee-members-table th {
+    padding: 12px 8px;
+    font-size: 0.9rem;
+  }
+
+  .ieee-members-table td {
+    padding: 12px 8px;
+    font-size: 0.9rem;
+  }
+
+  .ieee-members-table th:first-child,
+  .ieee-members-table td:first-child {
+    width: 50px;
+    padding: 12px 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ieee-members-title {
+    font-size: 1.8rem;
+  }
+
+  .ieee-members-table th {
+    padding: 10px 6px;
+    font-size: 0.8rem;
+  }
+
+  .ieee-members-table td {
+    padding: 10px 6px;
+    font-size: 0.85rem;
+  }
+
+  .ieee-members-table th:first-child,
+  .ieee-members-table td:first-child {
+    width: 40px;
+    padding: 10px 4px;
+  }
+
+  .ieee-members-table td:nth-child(2) {
+    font-size: 0.8rem;
+  }
+
+  .ieee-members-table td:nth-child(3) {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .ieee-members-section {
+    margin-top: 30px;
+    padding: 0 5px;
+  }
+
+  .ieee-members-title {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+  }
+
+  .ieee-members-table th {
+    padding: 8px 4px;
+    font-size: 0.75rem;
+  }
+
+  .ieee-members-table td {
+    padding: 8px 4px;
+    font-size: 0.8rem;
+  }
+}
