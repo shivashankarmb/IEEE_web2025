@@ -1,0 +1,127 @@
+.themes {
+  background-color: #f0f0f0;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+.themes-container {
+  padding: 0.1px 30px;
+  padding-top: 70px;
+  box-sizing: border-box;
+}
+
+/* Changed from .page-title to .themes .page-title to scope it */
+.themes .page-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 30px;
+  text-align: left;
+  border-bottom: 3px solid #333;
+  padding-bottom: 10px;
+  width: 100%;
+  margin-top: 10px;
+  box-sizing: border-box;
+}
+
+.themes .content-section {
+  margin-bottom: 40px;
+  box-sizing: border-box;
+}
+
+.themes .themes-list {
+  box-sizing: border-box;
+}
+
+.themes .theme-item {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 2px solid #e0e0e0;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.themes .theme-item:hover {
+  color: #4a90e2;
+  border-bottom-color: #4a90e2;
+}
+
+.themes .theme-item::before {
+  content: '🔹';
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+.themes .update-notice {
+  background-color: #f8f9fa;
+  border-left: 4px solid #4a90e2;
+  padding: 15px 20px;
+  margin: 30px 0;
+  border-radius: 0 8px 8px 0;
+  font-style: italic;
+  color: #555;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Responsive Design - Mobile First */
+@media (max-width: 768px) {
+  .themes-container {
+    padding: 15px 20px;
+    padding-top: 60px;
+  }
+
+  .themes .page-title {
+    font-size: 28px;
+    margin-top: 20px;
+  }
+
+  .themes .theme-item {
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+  }
+
+  .themes .update-notice {
+    padding: 12px 15px;
+    margin: 25px 0;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .themes-container {
+    padding: 15px 15px;
+    padding-top: 55px;
+  }
+
+  .themes .page-title {
+    font-size: 24px;
+    margin-top: 15px;
+  }
+
+  .themes .theme-item {
+    font-size: 16px;
+    margin-bottom: 18px;
+    padding-bottom: 10px;
+    gap: 8px;
+  }
+
+  .themes .theme-item::before {
+    font-size: 14px;
+  }
+
+  .themes .update-notice {
+    padding: 10px 12px;
+    margin: 20px 0;
+    font-size: 0.9rem;
+  }
+}

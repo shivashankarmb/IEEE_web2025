@@ -12,6 +12,9 @@ function ContactUs() {
         <p>Ms. Shaswatha V, Student Co-chair: 7204470201</p>
         <p>Mail ID: <a href="mailto:pesieeebnmit@gmail.com">pesieeebnmit@gmail.com</a></p>
       </div>
+      <div className="contact-enquiry">
+        Contact them for any enquiries on the hackathon
+      </div>
     </div>
   );
 }

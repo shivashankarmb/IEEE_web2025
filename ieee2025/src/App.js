@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Committees from './components/Committees';
+import Themes from './components/Themes';
 import ForParticipants from './components/For Participants';
 import Sponsors from './components/Sponsors';
 import Contact from './components/Contact';
@@ -22,6 +23,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/committees" element={<Committees />} />
+            <Route path="/themes" element={<Themes />} />
             <Route path="/participants" element={<ForParticipants />} />
             <Route path="/sponsors" element={<Sponsors />} />
             <Route path="/contact" element={<Contact />} />
