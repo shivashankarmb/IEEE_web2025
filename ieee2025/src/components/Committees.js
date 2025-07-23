@@ -2,7 +2,7 @@ import React from 'react';
 import './Committees.css';
 
 import tjrPhoto from '../assets/TJR Sir Photo.jpg';
-import adpPhoto from '../assets/ADP_BNMIT.webp';
+import adpPhoto from '../assets/ADP_BNMIT.jpg';
 import deanPhoto from '../assets/Dean.jpg';
 import deputyDirectorPhoto from '../assets/Dep_Director_BNMIT.webp';
 import hodeeePhoto from '../assets/venkatesha_HoD_EEE.webp';
@@ -130,24 +130,6 @@ function Committees() {
               <div className="card-header">
                 <div className="profile-image">
                   <img 
-                    src={ieeepeschairPhoto} 
-                    alt="IEEE-PES Chair Bangalore"
-                    onError={(e) => {
-                      e.target.src = profilePlaceholder;
-                    }}
-                  />
-                </div>
-              </div>
-              <div className="card-content">
-                <h3 className="member-name">Saptarshi Pani</h3>
-                <p className="member-title">Analog Design Engineer, Texas Instrumenys and Execom Member, IEEE Bangalore Section PES</p>
-              </div>
-            </div>
-            <div className="committee-card">
-              <div className="card-tech-border"></div>
-              <div className="card-header">
-                <div className="profile-image">
-                  <img 
                     src={hodeeePhoto} 
                     alt="HOD-EEE"
                     onError={(e) => {
@@ -202,11 +184,31 @@ Faculty Advisor, BNMIT IEEE PES Student Chapter</p>
               <div className="card-content">
                 <h3 className="member-name">Punith Kumar S M</h3>
                 <p className="member-title">
-  Execom Member,IEEE PES Bangalore Chapter,
-  Greaves Electric Mobility<br/> (IEEE PES Hackathon coordinator)
-</p>
+                  Execom Member,IEEE PES Bangalore Chapter,
+                  Greaves Electric Mobility<br/> (IEEE PES Hackathon coordinator)
+                </p>
               </div>
             </div>
+            <div className="committee-card">
+              <div className="card-tech-border"></div>
+              <div className="card-header">
+                <div className="profile-image">
+                  <img 
+                    src={ieeepeschairPhoto} 
+                    alt="IEEE-PES Chair Bangalore"
+                    onError={(e) => {
+                      e.target.src = profilePlaceholder;
+                    }}
+                  />
+                </div>
+              </div>
+              <div className="card-content">
+                <h3 className="member-name">Saptarshi Pani</h3>
+                <p className="member-title">Analog Design Engineer, Texas Instrumenys and Execom Member, IEEE Bangalore Section PES</p>
+              </div>
+            </div>
+            
+            
           </div>
         </div>
 
