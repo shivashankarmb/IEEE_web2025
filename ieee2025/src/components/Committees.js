@@ -10,6 +10,7 @@ import facultyAdvisorPhoto from '../assets/Madhu_BNMIT.jpg';
 import hackathonCoordinatorPhoto from '../assets/Hackathon_Coordinator.jpg'; // Placeholder for Hackathon Coordinator
 import studentChairPhoto from '../assets/Student_chair.jpg';
 import studentcoChairPhoto from '../assets/Student_Co_Chair.jpg';
+import ieeepeschairPhoto from '../assets/IEEE-PES Chair.jpg'; // Placeholder for IEEE PES Chair Bangalore
 
 function Committees() {
   // Placeholder for profile images
@@ -129,7 +130,7 @@ function Committees() {
               <div className="card-header">
                 <div className="profile-image">
                   <img 
-                    src="/ieee-pes-chair-profile.jpg" 
+                    src={ieeepeschairPhoto} 
                     alt="IEEE-PES Chair Bangalore"
                     onError={(e) => {
                       e.target.src = profilePlaceholder;
@@ -138,8 +139,8 @@ function Committees() {
                 </div>
               </div>
               <div className="card-content">
-                <h3 className="member-name">Dr. [IEEE-PES Chair Name]</h3>
-                <p className="member-title">IEEE-PES Chair - Bangalore</p>
+                <h3 className="member-name">Saptarshi Pani</h3>
+                <p className="member-title">Analog Design Engineer, Texas Instrumenys and Execom Member, IEEE Bangalore Section PES</p>
               </div>
             </div>
             <div className="committee-card">
