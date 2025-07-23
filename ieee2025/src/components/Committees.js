@@ -10,7 +10,8 @@ import facultyAdvisorPhoto from '../assets/Madhu_BNMIT.jpg';
 import hackathonCoordinatorPhoto from '../assets/Hackathon_Coordinator.jpg'; // Placeholder for Hackathon Coordinator
 import studentChairPhoto from '../assets/Student_chair.jpg';
 import studentcoChairPhoto from '../assets/Student_Co_Chair.jpg';
-import ieeepeschairPhoto from '../assets/IEEE-PES Chair.jpg'; // Placeholder for IEEE PES Chair Bangalore
+import ieeepesPhoto from '../assets/IEEE-PES.jpg'; 
+import ieeepeschairPhoto from '../assets/IEEE-PES Chair.jpg'; // Placeholder for IEEE-PES Chair Bangalore
 
 function Committees() {
   // Placeholder for profile images
@@ -130,6 +131,25 @@ function Committees() {
               <div className="card-header">
                 <div className="profile-image">
                   <img 
+                    src={ieeepeschairPhoto} 
+                    alt="IEEE-PES Chair Bangalore"
+                    onError={(e) => {
+                      e.target.src = profilePlaceholder;
+                    }}
+                  />
+                </div>
+              </div>
+              <div className="card-content">
+                <h3 className="member-name">Dr. Gurunath Gurrala</h3>
+                <p className="member-title">Associate Professor, Dept. of EE, IISc,<br /> Bangalore
+Chair - IEEE PES Bangalore Chapter.</p>
+              </div>
+            </div>
+            <div className="committee-card">
+              <div className="card-tech-border"></div>
+              <div className="card-header">
+                <div className="profile-image">
+                  <img 
                     src={hodeeePhoto} 
                     alt="HOD-EEE"
                     onError={(e) => {
@@ -194,7 +214,7 @@ Faculty Advisor, BNMIT IEEE PES Student Chapter</p>
               <div className="card-header">
                 <div className="profile-image">
                   <img 
-                    src={ieeepeschairPhoto} 
+                    src={ieeepesPhoto} 
                     alt="IEEE-PES Chair Bangalore"
                     onError={(e) => {
                       e.target.src = profilePlaceholder;
