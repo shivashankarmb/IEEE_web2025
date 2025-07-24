@@ -19,7 +19,7 @@ function Navbar() {
 
       <ul className={`nav-links ${isMobileMenuOpen ? 'active' : ''}`}>
         <li><Link to="/" onClick={toggleMobileMenu}>Home</Link></li>
-        <li><Link to="/committees" onClick={toggleMobileMenu}>Committees</Link></li>
+        <li><Link to="/committees" onClick={toggleMobileMenu}>Committee</Link></li>
         <li><Link to="/themes" onClick={toggleMobileMenu}>Themes</Link></li>
         <li><Link to="/participants" onClick={toggleMobileMenu}>For Participants</Link></li>
         <li><Link to="/sponsors" onClick={toggleMobileMenu}>Sponsors</Link></li>
