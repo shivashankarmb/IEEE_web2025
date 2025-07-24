@@ -38,8 +38,8 @@
   font-size: 20px;
   font-weight: bold;
   color: #333;
-  margin-bottom: 25px;
-  padding-bottom: 15px;
+  margin-bottom: 15px; 
+  padding-bottom: 10px; 
   text-align: left;
   display: flex;
   align-items: center;
@@ -55,7 +55,7 @@
 }
 
 .themes .theme-item::before {
-  content: '🔹';
+  content: '';
   font-size: 16px;
   margin-right: 5px;
 }
@@ -95,6 +95,30 @@
     margin: 25px 0;
     font-size: 0.95rem;
   }
+  .important-note {
+    padding: 12px 15px;
+    margin: 15px 0 25px 0;
+    font-size: 0.95rem;
+  }
+
+  .theme-bullets li {
+    font-size: 15px;
+    margin-bottom: 6px;
+  }
+
+  .theme-content {
+    padding-left: 5px;
+  }
+
+  .theme-bullets {
+    padding-left: 20px;
+  }
+
+  .open-innovation-text {
+    font-size: 15px;
+    padding-left: 15px;
+  }
+
 }
 
 @media (max-width: 480px) {
@@ -124,4 +148,76 @@
     margin: 20px 0;
     font-size: 0.9rem;
   }
+  .important-note {
+    padding: 10px 12px;
+    margin: 12px 0 20px 0;
+    font-size: 0.9rem;
+  }
+
+  .theme-bullets li {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  .theme-bullets {
+    padding-left: 18px;
+  }
+
+  .open-innovation-text {
+    font-size: 14px;
+    padding-left: 12px;
+  }
+
+  .theme-content {
+    margin-bottom: 25px;
+  }
+}
+
+.important-note {
+  background-color: #e3f2fd;
+  border-left: 4px solid #1976d2;
+  padding: 15px 20px;
+  margin: 20px 0 30px 0;
+  border-radius: 0 8px 8px 0;
+  font-size: 1rem;
+  color: #1565c0;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.important-note strong {
+  color: #0d47a1;
+  font-weight: 600;
+}
+
+.theme-content {
+  margin-bottom: 30px;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+
+.theme-bullets {
+  list-style-type: disc;
+  margin: 0;
+  padding-left: 25px;
+  text-align: left;
+}
+
+.theme-bullets li {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 8px;
+  line-height: 1.5;
+  padding-left: 5px;
+}
+
+
+.open-innovation-text {
+  font-size: 16px;
+  color: #555;
+  text-align: left;
+  margin: 0;
+  padding-left: 20px;
+  font-style: italic;
+  line-height: 1.5;
 }

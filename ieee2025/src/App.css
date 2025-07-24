@@ -1,4 +1,9 @@
 /* App.css */
+html {
+  /* Disable smooth scrolling to allow instant scroll-to-top */
+  scroll-behavior: auto !important;
+}
+
 body, html, #root {
   margin: 0;
   padding: 0;

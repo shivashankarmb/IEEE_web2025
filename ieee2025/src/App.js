@@ -10,6 +10,7 @@ import Sponsors from './components/Sponsors';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import NotFound from './components/NotFound';
+import ScrollToTop from './components/ScrollToTop';
 
 
 import './App.css';
@@ -18,6 +19,7 @@ function App() {
   return (
     <div className="App">
       <Router>
+        <ScrollToTop />
         <Navbar />
         <div className="main-content">
           <Routes>
