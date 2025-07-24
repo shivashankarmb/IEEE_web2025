@@ -2,13 +2,13 @@ import React, { useRef } from 'react';
 import Slider from 'react-slick';
 import './Home.css';
 
-import img1 from '../assets/bnmit-building.jpg';
-import img2 from '../assets/BNMIT-S-Building.jpg';
+import img1 from '../assets/bnmit-building.webp';
+import img2 from '../assets/BNMIT-S-Building.webp';
 import img3 from '../assets/bnmitlogo.jpg';         // BNMIT logo
 import ieeelogo from '../assets/ieeelogo.jpg';
 import img4 from '../assets/bnmitieeelogo.jpg';     // IEEE logo
-import img5 from '../assets/Audi Block BNMITbuilding Photo.jpg'; // Audi Block BNMIT Building
-import img6 from '../assets/Auditorium_APjSir event photo.png'; // S Building BNMIT
+import img5 from '../assets/Audi Block BNMITbuilding Photo.webp'; // Audi Block BNMIT Building
+import img6 from '../assets/Auditorium_APjSir event photo.webp'; // S Building BNMIT
 
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -42,16 +42,16 @@ function Home() {
         <div className="multi-carousel-wrapper">
           <Slider {...settings}>
             <div>
-              <img src={img1} alt="BNMIT Building" className="multi-carousel-img" />
+              <img src={img1} alt="BNMIT Building" loading="lazy" className="multi-carousel-img" />
             </div>
             <div>
-              <img src={img2} alt="BNMIT S Building" className="multi-carousel-img" />
+              <img src={img2} alt="BNMIT S Building" loading="lazy" className="multi-carousel-img" />
             </div>
             <div>
-              <img src={img5} alt="BNMIT Audi Building" className="multi-carousel-img" />
+              <img src={img5} alt="BNMIT Audi Building" loading="lazy" className="multi-carousel-img" />
             </div>
             <div>
-              <img src={img6} alt="BNMIT S Building" className="multi-carousel-img" />
+              <img src={img6} alt="BNMIT S Building" loading="lazy" className="multi-carousel-img" />
             </div>
           </Slider>
         </div>

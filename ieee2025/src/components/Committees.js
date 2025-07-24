@@ -1,18 +1,18 @@
 import React from 'react';
 import './Committees.css';
 
-import chairmanPhoto from '../assets/Chairman.jpg';
-import tjrPhoto from '../assets/TJR Sir Photo.jpg';
-import adpPhoto from '../assets/ADP_BNMIT.jpg';
-import deanPhoto from '../assets/Dean.jpg';
+import chairmanPhoto from '../assets/Chairman.webp';
+import tjrPhoto from '../assets/TJR Sir Photo.webp';
+import adpPhoto from '../assets/ADP_BNMIT.webp';
+import deanPhoto from '../assets/Dean.webp';
 import deputyDirectorPhoto from '../assets/Dep_Director_BNMIT.webp';
 import hodeeePhoto from '../assets/venkatesha_HoD_EEE.webp';
-import facultyAdvisorPhoto from '../assets/Madhu_BNMIT.jpg';
-import hackathonCoordinatorPhoto from '../assets/Hackathon_Coordinator.jpg'; // Placeholder for Hackathon Coordinator
-import studentChairPhoto from '../assets/Student_chair.jpg';
-import studentcoChairPhoto from '../assets/Student_Co_Chair.jpg';
-import ieeepesPhoto from '../assets/IEEE-PES.jpg'; 
-import ieeepeschairPhoto from '../assets/IEEE-PES Chair.jpg'; // Placeholder for IEEE-PES Chair Bangalore
+import facultyAdvisorPhoto from '../assets/Madhu_BNMIT.webp';
+import hackathonCoordinatorPhoto from '../assets/Hackathon_Coordinator.webp'; // Placeholder for Hackathon Coordinator
+import studentChairPhoto from '../assets/Student_chair.webp';
+import studentcoChairPhoto from '../assets/Student_Co_Chair.webp';
+import ieeepesPhoto from '../assets/IEEE-PES.webp'; 
+import ieeepeschairPhoto from '../assets/IEEE-PES Chair.webp'; // Placeholder for IEEE-PES Chair Bangalore
 
 function Committees() {
   // Placeholder for profile images
@@ -31,6 +31,7 @@ function Committees() {
                 <div className="profile-image">
                   <img 
                     src={chairmanPhoto}
+                    loading="lazy"
                     alt="Sri. Narayan Rao R. Maanay"
                     onError={(e) => {
                       e.target.src = profilePlaceholder;
@@ -55,6 +56,7 @@ function Committees() {
                 <div className="profile-image">
                   <img 
                     src={tjrPhoto} 
+                    loading="lazy"
                     alt="Director"
                     onError={(e) => {
                       e.target.src = profilePlaceholder;
@@ -73,6 +75,7 @@ function Committees() {
                 <div className="profile-image">
                   <img 
                     src={adpPhoto}
+                    loading="lazy"
                     alt="Additional Director and Principal"
                     onError={(e) => {
                       e.target.src = profilePlaceholder;
@@ -91,6 +94,7 @@ function Committees() {
                 <div className="profile-image">
                   <img 
                     src={deanPhoto} 
+                    loading="lazy"
                     alt="Dean"
                     onError={(e) => {
                       e.target.src = profilePlaceholder;
@@ -109,6 +113,7 @@ function Committees() {
                 <div className="profile-image">
                   <img 
                     src={deputyDirectorPhoto} 
+                    loading="lazy"
                     alt="Deputy Director"
                     onError={(e) => {
                       e.target.src = profilePlaceholder;
@@ -133,6 +138,7 @@ function Committees() {
                 <div className="profile-image">
                   <img 
                     src={ieeepeschairPhoto} 
+                    loading="lazy"
                     alt="IEEE-PES Chair Bangalore"
                     onError={(e) => {
                       e.target.src = profilePlaceholder;
@@ -152,6 +158,7 @@ Chair - IEEE PES Bangalore Chapter.</p>
                 <div className="profile-image">
                   <img 
                     src={hodeeePhoto} 
+                    loading="lazy"
                     alt="HOD-EEE"
                     onError={(e) => {
                       e.target.src = profilePlaceholder;
@@ -176,6 +183,7 @@ Chair - IEEE PES Bangalore Chapter.</p>
                 <div className="profile-image">
                   <img 
                     src={facultyAdvisorPhoto} 
+                    loading="lazy"
                     alt="IEEE Faculty Advisor"
                     onError={(e) => {
                       e.target.src = profilePlaceholder;
@@ -195,6 +203,7 @@ Faculty Advisor, BNMIT IEEE PES Student Chapter</p>
                 <div className="profile-image">
                   <img 
                     src={hackathonCoordinatorPhoto}
+                    loading="lazy"
                     alt="IEEE PES Hackathon Coordinator"
                     onError={(e) => {
                       e.target.src = profilePlaceholder;
@@ -216,6 +225,7 @@ Faculty Advisor, BNMIT IEEE PES Student Chapter</p>
                 <div className="profile-image">
                   <img 
                     src={ieeepesPhoto} 
+                    loading="lazy"
                     alt="IEEE-PES Chair Bangalore"
                     onError={(e) => {
                       e.target.src = profilePlaceholder;
@@ -242,6 +252,7 @@ Faculty Advisor, BNMIT IEEE PES Student Chapter</p>
                 <div className="profile-image">
                   <img 
                     src={studentChairPhoto}
+                    loading="lazy"
                     alt="IEEE PES Student Chair"
                     onError={(e) => {
                       e.target.src = profilePlaceholder;
@@ -260,6 +271,7 @@ Faculty Advisor, BNMIT IEEE PES Student Chapter</p>
                 <div className="profile-image">
                   <img 
                     src={studentcoChairPhoto} 
+                    loading="lazy"
                     alt="IEEE PES Student Co-Chair"
                     onError={(e) => {
                       e.target.src = profilePlaceholder;
