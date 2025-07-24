@@ -12,7 +12,7 @@ function ForParticipants() {
   return (
     <div className="participants">
       <div className="participants-container">
-        <h1 className="page-title">For Participants</h1>
+        <h1 className="participants-title">For Participants</h1>
 
         <div className="button-row">
           <div className="content-section">
