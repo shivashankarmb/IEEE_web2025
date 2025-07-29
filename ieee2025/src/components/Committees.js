@@ -262,7 +262,7 @@ Faculty Advisor, BNMIT IEEE PES Student Chapter</p>
               </div>
               <div className="card-content">
                 <h3 className="member-name">Deekshitha K</h3>
-                <p className="member-title">IEEE BNMIT Student Chair</p>
+                <p className="member-title">IEEE PES BNMIT Student Chair</p>
               </div>
             </div>
             <div className="committee-card">
@@ -281,7 +281,7 @@ Faculty Advisor, BNMIT IEEE PES Student Chapter</p>
               </div>
               <div className="card-content">
                 <h3 className="member-name">Shaswatha Varadhan</h3>
-                <p className="member-title">IEEE BNMIT Student Co-Chair</p>
+                <p className="member-title">IEEE PES BNMIT Student Co-Chair</p>
               </div>
             </div>
           </div>
