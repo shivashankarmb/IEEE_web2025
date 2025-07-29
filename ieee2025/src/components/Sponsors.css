@@ -1,5 +1,3 @@
-/* Sponsors.css */
-
 .sponsors {
   background: linear-gradient(135deg, #ba8ee1, #443054, #c390e9);
   min-height: 100vh;
@@ -35,14 +33,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 300px;
+  width: 200px;
+  animation: fadeInUp 0.8s ease forwards;
+  opacity: 0;
 }
 
-/* ✅ Rectangular image frame */
+/* ✅ Circle image frame */
 .sponsor-image {
-  width: 100%;
+  width: 180px;
   height: 180px;
-  border-radius: 12px;
+  border-radius: 50%;
   background-color: #ffffff;
   border: 4px solid #72deda;
   overflow: hidden;
@@ -53,7 +53,7 @@
 .sponsor-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* ✅ Fill the full rectangle */
+  object-fit: cover; /* ✅ Fill the full circle */
   display: block;
 }
 
@@ -69,22 +69,6 @@
   text-align: center;
 }
 
-/* ------------------- Responsive Styling ------------------- */
-
-@media (max-width: 1024px) {
-  .sponsor-card {
-    width: 240px;
-  }
-
-  .sponsor-image {
-    height: 150px;
-  }
-
-  .sponsor-name {
-    font-size: 18px;
-  }
-}
-
 @media (max-width: 768px) {
   .sponsors-title {
     font-size: 32px;
@@ -92,11 +76,12 @@
   }
 
   .sponsor-card {
-    width: 200px;
+    width: 160px;
   }
 
   .sponsor-image {
-    height: 130px;
+    width: 140px;
+    height: 140px;
   }
 
   .sponsor-name {
@@ -118,10 +103,11 @@
   }
 
   .sponsor-card {
-    width: 160px;
+    width: 130px;
   }
 
   .sponsor-image {
+    width: 110px;
     height: 110px;
   }
 
@@ -134,9 +120,7 @@
   }
 }
 
-/* ------------------- ✅ Additional Styling ------------------- */
-
-/* Add fade-in animation to sponsor cards */
+/* ------------------- Animation ------------------- */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -148,12 +132,6 @@
   }
 }
 
-.sponsor-card {
-  animation: fadeInUp 0.8s ease forwards;
-  opacity: 0; /* Ensure fade-in effect works */
-}
-
-/* Add staggered animation delays */
 .sponsor-card:nth-child(1) {
   animation-delay: 0.1s;
 }
@@ -169,9 +147,8 @@
 .sponsor-card:nth-child(5) {
   animation-delay: 0.5s;
 }
-/* Add more nth-childs as needed */
 
-/* Hover glow effect on sponsor names */
+/* Hover effect on names */
 .sponsor-name:hover {
   color: #72deda;
   text-shadow: 0 0 10px #72deda;

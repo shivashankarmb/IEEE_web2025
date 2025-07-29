@@ -7,7 +7,8 @@ const Sponsors = () => {
   return (
     <div className="sponsors">
       <div className="sponsors-container">
-        <h1 className="sponsors-title">Sponsors</h1>
+        {/* Technical Sponsors Section */}
+        <h1 className="sponsors-title">Technical sponsors</h1>
         <div className="sponsors-logos">
           <div className="sponsor-card">
             <div className="sponsor-image">
@@ -15,6 +16,11 @@ const Sponsors = () => {
             </div>
             <p className="sponsor-name">IEEE PES Power & Energy Society</p>
           </div>
+        </div>
+
+        {/* General Sponsors Section */}
+        <h1 className="sponsors-title">General sponsors</h1>
+        <div className="sponsors-logos">
           <div className="sponsor-card">
             <div className="sponsor-image">
               <img src={propureLogo} alt="Propure Technologies" />
