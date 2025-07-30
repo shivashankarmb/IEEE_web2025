@@ -15,7 +15,7 @@ function Themes() {
           <div className="themes-list">
             {/* Environment & Sustainability */}
             <div className="theme-item">
-               Thems 1 Environment & Sustainability
+               Theme 1 Environment & Sustainability
             </div>
             <div className="theme-content">
               <ul className="theme-bullets">
@@ -28,7 +28,7 @@ function Themes() {
             
             {/* Healthcare */}
             <div className="theme-item">
-              Healthcare
+              Theme 2 Healthcare
             </div>
             <div className="theme-content">
               <ul className="theme-bullets">
@@ -44,7 +44,7 @@ function Themes() {
             
             {/* Robotics and Drones */}
             <div className="theme-item">
-              Robotics and Drones
+              Theme 3 Robotics and Drones
             </div>
             <div className="theme-content">
               <ul className="theme-bullets">
@@ -56,7 +56,7 @@ function Themes() {
             
             {/* Renewable Energy */}
             <div className="theme-item">
-              Renewable Energy
+              Theme 4 Renewable Energy
             </div>
             <div className="theme-content">
               <ul className="theme-bullets">
