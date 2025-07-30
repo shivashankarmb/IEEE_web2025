@@ -15,7 +15,7 @@ function Themes() {
           <div className="themes-list">
             {/* Environment & Sustainability */}
             <div className="theme-item">
-              Environment & Sustainability
+               Thems 1 Environment & Sustainability
             </div>
             <div className="theme-content">
               <ul className="theme-bullets">
