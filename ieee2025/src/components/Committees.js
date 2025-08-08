@@ -13,6 +13,7 @@ import studentChairPhoto from '../assets/Student_chair.webp';
 import studentcoChairPhoto from '../assets/Student_Co_Chair.webp';
 import ieeepesPhoto from '../assets/IEEE-PES.webp'; 
 import ieeepeschairPhoto from '../assets/IEEE-PES Chair.webp'; // Placeholder for IEEE-PES Chair Bangalore
+import StaffCoordinatorPhoto from '../assets/StaffCoordinator.jpg'; // Placeholder for Staff Coordinator
 
 function Committees() {
   // Placeholder for profile images
@@ -212,7 +213,7 @@ Faculty Advisor, BNMIT IEEE PES Student Chapter</p>
                 </div>
               </div>
               <div className="card-content">
-                <h3 className="member-name">Punith Kumar S M</h3>
+                <h3 className="member-name">Mr. Punith Kumar S M</h3>
                 <p className="member-title">
                   Execom Member,IEEE PES Bangalore Chapter,
                   Greaves Electric Mobility<br/> (IEEE PES Hackathon coordinator)
@@ -234,8 +235,27 @@ Faculty Advisor, BNMIT IEEE PES Student Chapter</p>
                 </div>
               </div>
               <div className="card-content">
-                <h3 className="member-name">Saptarshi Pani</h3>
+                <h3 className="member-name">Mr. Saptarshi Pani</h3>
                 <p className="member-title">Analog Design Engineer, Texas Instrumenys and Execom Member, IEEE Bangalore Section PES</p>
+              </div>
+            </div>
+            <div className="committee-card">
+              <div className="card-tech-border"></div>
+              <div className="card-header">
+                <div className="profile-image">
+                  <img 
+                    src={StaffCoordinatorPhoto} 
+                    loading="lazy"
+                    alt="IEEE-PES Chair Bangalore"
+                    onError={(e) => {
+                      e.target.src = profilePlaceholder;
+                    }}
+                  />
+                </div>
+              </div>
+              <div className="card-content">
+                <h3 className="member-name">Dr. Priyashree S</h3>
+                <p className="member-title">Staff coordinator<br/>Associate Professor, Dept. of EEE, BNMIT</p>
               </div>
             </div>
             
