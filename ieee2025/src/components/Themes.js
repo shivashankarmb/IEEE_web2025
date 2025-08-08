@@ -14,8 +14,11 @@ function Themes() {
           
           <div className="themes-list">
             {/* Environment & Sustainability */}
-            <div className="theme-item">
-               Theme 1 Environment & Sustainability
+            <div className="theme-item theme-environment">
+              <div className="theme-number">01</div>
+              <div className="theme-content-wrapper">
+                <h3 className="theme-title">Environment & Sustainability</h3>
+              </div>
             </div>
             <div className="theme-content">
               <ul className="theme-bullets">
@@ -27,8 +30,11 @@ function Themes() {
             </div>
             
             {/* Healthcare */}
-            <div className="theme-item">
-              Theme 2 Healthcare
+            <div className="theme-item theme-healthcare">
+              <div className="theme-number">02</div>
+              <div className="theme-content-wrapper">
+                <h3 className="theme-title">Healthcare Technology</h3>
+              </div>
             </div>
             <div className="theme-content">
               <ul className="theme-bullets">
@@ -43,8 +49,11 @@ function Themes() {
             </div>
             
             {/* Robotics and Drones */}
-            <div className="theme-item">
-              Theme 3 Robotics and Drones
+            <div className="theme-item theme-robotics">
+              <div className="theme-number">03</div>
+              <div className="theme-content-wrapper">
+                <h3 className="theme-title">Robotics & Autonomous Systems</h3>
+              </div>
             </div>
             <div className="theme-content">
               <ul className="theme-bullets">
@@ -55,8 +64,11 @@ function Themes() {
             </div>
             
             {/* Renewable Energy */}
-            <div className="theme-item">
-              Theme 4 Renewable Energy
+            <div className="theme-item theme-energy">
+              <div className="theme-number">04</div>
+              <div className="theme-content-wrapper">
+                <h3 className="theme-title">Renewable Energy Systems</h3>
+              </div>
             </div>
             <div className="theme-content">
               <ul className="theme-bullets">
@@ -70,8 +82,11 @@ function Themes() {
             </div>
             
             {/* Open Innovation */}
-            <div className="theme-item">
-              Open Innovation
+            <div className="theme-item theme-innovation">
+              <div className="theme-number">05</div>
+              <div className="theme-content-wrapper">
+                <h3 className="theme-title">Open Innovation Track</h3>
+              </div>
             </div>
             <div className="theme-content">
               <p className="open-innovation-text">
