@@ -306,6 +306,81 @@ Faculty Advisor, BNMIT IEEE PES Student Chapter</p>
             </div>
           </div>
         </div>
+        <div className="ieee-members-section">
+          <h2 className="ieee-members-title">Faculty</h2>
+          <div className="ieee-members-table-container">
+            <table className="ieee-members-table">
+              <thead>
+                <tr>
+                  <th>Faculty Name</th>
+                  <th>Designation</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Dr. Venkatesha K</td>
+                  <td>Professor & HOD</td>
+                </tr>
+                <tr>                  
+                  <td>Dr. V Muralidhara</td>
+                  <td>Professor</td>
+                </tr>
+                <tr>                  
+                  <td>Dr. A Kumar</td>
+                  <td>Professor</td>
+                </tr>
+                <tr>                  
+                  <td>Dr. Priyashree S</td>
+                  <td>Associate Professor</td>
+                </tr>
+                <tr>                  
+                  <td>Dr. Madhu S</td>
+                  <td>Associate Professor</td>
+                </tr>
+                <tr>
+                  <td>Dr. Shubha Rao K</td>
+                  <td>Associate Professor</td>
+                </tr>
+                <tr>                  
+                  <td>Dr. Champa P N</td>
+                  <td>Associate Professor</td>
+                </tr>
+                <tr>                  
+                  <td>Smt. Ashwini A</td>
+                  <td>Assistant Professor</td>
+                </tr>
+                <tr>                  
+                  <td>Smt. Kruthi Jayaram</td>
+                  <td>Assistant Professor</td>
+                </tr>
+                <tr>                  
+                  <td>Smt. Karanam Vasudha</td>
+                  <td>Assistant Professor</td>
+                </tr>
+                <tr>                  
+                  <td>Sri. Sujith T</td>
+                  <td>Assistant Professor</td>
+                </tr>
+                <tr>                  
+                  <td>Smt. Raksha S</td>
+                  <td>Assistant Professor</td>
+                </tr>
+                <tr>                  
+                  <td>Smt. Shruti V Joshi</td>
+                  <td>Assistant Professor</td>
+                </tr>
+                <tr>                  
+                  <td>Smt. Pankaja H G</td>
+                  <td>Assistant Professor</td>
+                </tr>
+                <tr>                  
+                  <td>Smt. Kurva Swetha</td>
+                  <td>Assistant Professor</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
        {/* IEEE Members Table Section */}
         <div className="ieee-members-section">
           <h2 className="ieee-members-title">IEEE Members</h2>
