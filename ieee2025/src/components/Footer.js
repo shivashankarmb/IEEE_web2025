@@ -80,10 +80,29 @@ function Footer() {
         {/* Developers */}
         <div className="footer-section">
           <h3>Website developed by</h3>
-          <p><span className="highlight">V Saishivram</span></p>
-          <p><span className="highlight">ShivaShankara M B </span></p>
-          <p><span className="highlight">Navya A</span></p>
-          <p><span className="highlight">C M Kavana</span></p>
+          <p>
+            <a
+              href="https://www.linkedin.com/in/saishivram-v" // <-- Replace with actual link
+              target="_blank"
+              rel="noopener noreferrer"
+              className="highlight"
+            >
+               <FaLinkedin />
+              V Saishivra 
+            </a>
+          </p>
+          <p>
+            <a
+              href="https://www.linkedin.com/in/shivashankar-mb-1171b626b/" // <-- Replace with actual link
+              target="_blank"
+              rel="noopener noreferrer"
+              className="highlight"
+            >
+              <FaLinkedin />
+              ShivaShankara M B 
+            </a>
+          </p>
+          
           <p>Department Of ISE</p>
         </div>
       </div>
