@@ -236,3 +236,15 @@ body {
     font-size: 0.95rem;
   }
 }
+
+/* Registration Deadline Scrolling Message */
+.registration-marquee {
+  background-color: #030303;
+  padding: 10px;
+  
+  border: 1px solid #09e91b;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #ffffff;
+  border-radius: 5px;
+}

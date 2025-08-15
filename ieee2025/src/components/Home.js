@@ -56,10 +56,16 @@ function Home() {
           </Slider>
         </div>
 
+        {/* Scrolling Registration Deadline Message */}
+        <div className="registration-marquee">
+          <marquee behavior="scroll" direction="left" scrollamount="6">
+            📢<strong>16 Aug</strong> is the last date to submit the Abstract
+          </marquee>
+        </div>
+
         {/* Welcome Section with Logos and Text */}
         <section className="welcome-section">
           <div className="welcome-logos">
-            {/* Left Logo + BNMIT Link */}
             {/* Left Logo + BNMIT Link */}
             <div className="logo-with-label">
               <img src={img3} alt="BNMIT Logo" className="side-logo" />
@@ -73,7 +79,6 @@ function Home() {
               </a>
             </div>
 
-            {/* Center Text + BNMIT IEEE PES Logo */}
             {/* Center Text + BNMIT IEEE PES Logo */}
             <div className="welcome-text">
               <h1>Welcome to BNMIT IEEE PES Hardware Hackathon– <br />Electrothon 2025</h1>
