@@ -59,7 +59,7 @@ function Home() {
         {/* Scrolling Registration Deadline Message */}
         <div className="registration-marquee">
           <marquee behavior="scroll" direction="left" scrollamount="6">
-            📢<strong>16 Aug</strong> is the last date to submit the Abstract
+            📢 16 Aug is the last date to submit the Abstract
           </marquee>
         </div>
 
