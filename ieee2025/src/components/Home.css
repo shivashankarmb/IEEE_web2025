@@ -99,7 +99,6 @@ body {
   text-align: center;
   flex: 0 0 200px;
   min-height: 200px;
-
 }
 
 .side-logo {
@@ -185,7 +184,6 @@ body {
   width: 100%;
 }
 
-
 /* External Link Wrapper */
 .external-link {
   margin-top: 15px;
@@ -236,13 +234,27 @@ body {
     font-size: 0.95rem;
   }
 }
+
+/* Scrolling Registration Message */
 .registration-marquee {
   background-color: #030303;
   padding: 10px;
-  
   border: 1px solid #09e91b;
   font-size: 1.1rem;
   font-weight: bold;
   color: #ffffff;
   border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.scroll-text {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll-left 12s linear infinite;
+}
+
+@keyframes scroll-left {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
 }

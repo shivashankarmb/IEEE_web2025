@@ -4,11 +4,11 @@ import './Home.css';
 
 import img1 from '../assets/bnmit-building.webp';
 import img2 from '../assets/BNMIT-S-Building.webp';
-import img3 from '../assets/bnmitlogo.jpg';         // BNMIT logo
+import img3 from '../assets/bnmitlogo.jpg';
 import ieeelogo from '../assets/ieeelogo.jpg';
-import img4 from '../assets/bnmitieeelogo.jpg';     // IEEE logo
-import img5 from '../assets/Audi Block BNMITbuilding Photo.webp'; // Audi Block BNMIT Building
-import img6 from '../assets/Auditorium_APjSir event photo.webp'; // S Building BNMIT
+import img4 from '../assets/bnmitieeelogo.jpg';
+import img5 from '../assets/Audi Block BNMITbuilding Photo.webp';
+import img6 from '../assets/Auditorium_APjSir event photo.webp';
 
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -28,9 +28,7 @@ function Home() {
     responsive: [
       {
         breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-        },
+        settings: { slidesToShow: 1 },
       },
     ],
   };
@@ -58,15 +56,15 @@ function Home() {
 
         {/* Scrolling Registration Deadline Message */}
         <div className="registration-marquee">
-          <marquee behavior="scroll" direction="left" scrollamount="6">
+          <span className="scroll-text">
             📢 16 Aug is the last date to submit the Abstract
-          </marquee>
+          </span>
         </div>
 
-        {/* Welcome Section with Logos and Text */}
+        {/* Welcome Section */}
         <section className="welcome-section">
           <div className="welcome-logos">
-            {/* Left Logo + BNMIT Link */}
+            {/* Left Logo */}
             <div className="logo-with-label">
               <img src={img3} alt="BNMIT Logo" className="side-logo" />
               <a
@@ -79,7 +77,7 @@ function Home() {
               </a>
             </div>
 
-            {/* Center Text + BNMIT IEEE PES Logo */}
+            {/* Center Text */}
             <div className="welcome-text">
               <h1>Welcome to BNMIT IEEE PES Hardware Hackathon– <br />Electrothon 2025</h1>
               <img
@@ -89,7 +87,7 @@ function Home() {
               />
             </div>
 
-            {/* Right Logo + IEEE PES Link */}
+            {/* Right Logo */}
             <div className="logo-with-label">
               <img src={ieeelogo} alt="IEEE Logo" className="side-logo" />
               <a
