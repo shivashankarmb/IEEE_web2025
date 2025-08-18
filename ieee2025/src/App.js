@@ -12,6 +12,8 @@ import Footer from './components/Footer';
 import NotFound from './components/NotFound';
 import ScrollToTop from './components/ScrollToTop';
 
+// ✅ Import the new component
+import Round2Teams from './components/Round2Teams';
 
 import './App.css';
 
@@ -27,10 +29,13 @@ function App() {
             <Route path="/committees" element={<Committees />} />
             <Route path="/themes" element={<Themes />} />
             <Route path="/participants" element={<ForParticipants />} />
+            
+            {/* ✅ New Route for Round-2 Teams And Guidelines */}
+            <Route path="/round2-teams" element={<Round2Teams />} />
+
             <Route path="/sponsors" element={<Sponsors />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/footer" element={<Footer />} />
-
 
             <Route path="*" element={<NotFound />} />
           </Routes>

@@ -22,6 +22,7 @@ function Navbar() {
         <li><Link to="/committees" onClick={toggleMobileMenu}>Committee</Link></li>
         <li><Link to="/themes" onClick={toggleMobileMenu}>Themes</Link></li>
         <li><Link to="/participants" onClick={toggleMobileMenu}>For Participants</Link></li>
+        <li><Link to="/round2-teams" onClick={toggleMobileMenu}>Round-2 Teams And Guidelines</Link></li>
         <li><Link to="/sponsors" onClick={toggleMobileMenu}>Sponsors</Link></li>
         <li><Link to="/contact" onClick={toggleMobileMenu}>Contact Us</Link></li>
       </ul>
