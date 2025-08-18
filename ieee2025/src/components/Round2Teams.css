@@ -1,11 +1,246 @@
+/* Buttons row for Register and Selected Teams */
+.round2-buttons-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 24px 0 18px 0;
+}
+
+@media (max-width: 600px) {
+  .round2-buttons-row {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .round2-buttons-row .register-btn {
+    margin-left: 0 !important;
+    width: 100%;
+    max-width: 260px;
+  }
+}
+/* Selected Teams button below message, right aligned */
+.round2-action-btn-below {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.2rem;
+  margin-bottom: 2rem;
+}
+/* Flex row for action area */
+.round2-action-table-row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 900px) {
+  .round2-action-table-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+  }
+  .round2-register-btn-wrapper,
+  .round2-action-btn-below {
+    justify-content: center;
+  }
+  .congratulatory {
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .round2-container {
+    align-items: center;
+    padding: 20px 4px 10px 4px;
+    text-align: center;
+    min-height: unset;
+  }
+  .round2-title {
+    text-align: center;
+    font-size: 22px;
+    padding-bottom: 6px;
+    margin-bottom: 18px;
+  }
+  .congratulatory {
+    font-size: 1rem;
+    padding: 1rem 0.5rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  .round2-table-title {
+    font-size: 1.05rem;
+  }
+  .round2-table-wrapper {
+    max-width: 100vw;
+    overflow-x: auto;
+    margin-left: -4px;
+    margin-right: -4px;
+    margin-top: 1rem;
+  }
+  .round2-table th, .round2-table td {
+    padding: 0.5rem 0.5rem;
+    font-size: 0.95rem;
+  }
+  .round2-action-btn-below {
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .round2-register-btn-wrapper {
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .round2-title {
+    font-size: 18px;
+  }
+  .congratulatory {
+    font-size: 0.95rem;
+    padding: 0.7rem 0.2rem;
+    border-radius: 6px;
+  }
+  .round2-table th, .round2-table td {
+    padding: 0.35rem 0.2rem;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .round2-title {
+    font-size: 16px;
+  }
+  .congratulatory {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.1rem;
+    border-radius: 4px;
+  }
+  .round2-table th, .round2-table td {
+    padding: 0.2rem 0.1rem;
+    font-size: 0.8rem;
+  }
+}
+
+.round2-register-btn-wrapper {
+  margin-top: 0;
+  display: flex;
+  align-items: flex-start;
+}
+/* Register button alignment wrapper */
+.round2-register-btn-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 2rem;
+}
+/* Congratulatory message styling */
+.congratulatory {
+  background: linear-gradient(90deg, #e3ffe6 0%, #fffbe7 100%);
+  border-left: 6px solid #1976d2;
+  padding: 1.2rem 1.5rem;
+  border-radius: 10px;
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: #1976d2;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 12px rgba(25, 118, 210, 0.08);
+  display: flex;
+  align-items: center;
+}
+
+.round2-table-title {
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1976d2;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.5px;
+}
+
+/* Table styling based on Committees, with celebratory tweaks */
+.congratulatory-table {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(25, 118, 210, 0.12);
+  overflow: hidden;
+  margin: 0 auto 2rem auto;
+  max-width: 700px;
+  box-sizing: border-box;
+}
+
+.round2-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+.round2-table thead {
+  background: linear-gradient(90deg, #a7e3c7, #f7d774);
+  color: #1976d2;
+}
+
+.round2-table th {
+  padding: 18px 20px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  border: none;
+  box-sizing: border-box;
+}
+
+.round2-table tbody tr {
+  transition: all 0.3s ease;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.round2-table tbody tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.round2-table tbody tr:hover {
+  background-color: #e3ffe6;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(25, 118, 210, 0.15);
+}
+
+.round2-table td {
+  padding: 16px 20px;
+  font-size: 1rem;
+  color: #2c3e50;
+  border: none;
+  box-sizing: border-box;
+}
+
+.round2-table td:first-child {
+  text-align: center;
+  font-weight: 600;
+  color: #1976d2;
+  background-color: rgba(25, 118, 210, 0.08);
+}
+
+.round2-table td:nth-child(2) {
+  font-weight: 500;
+  color: #171819;
+}
 /* Round 2 Container */
 .round2-container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  padding: 100px 40px 40px 40px;
-  height: 80vh;
+  padding: 80px 40px 40px 25px;
+  min-height: 80vh;
   background: white;
   color: black;
   text-align: left;
@@ -13,23 +248,82 @@
   position: relative;
 }
 
-/* Title above divider */
-.round2-title {
-  font-size: 28px;
-  font-weight: bold;
-  color: #333;
-  margin: 0 0 10px 0;
-  text-align: left;
+/* Congratulatory message */
+.round2-message {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  max-width: 700px;
 }
 
-/* Divider line */
-.divider {
-  width: 120%;
-  border: none;
-  height: 3.5px;
-  background: #333;
-  margin-bottom: 30px;
+/* Button and table section */
+.round2-action-table {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-bottom: 2rem;
 }
+
+.round2-action-btn {
+  margin-bottom: 1rem;
+}
+
+.selected-teams-btn {
+  background-color: #1976d2;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transition: background 0.2s;
+}
+.selected-teams-btn:hover {
+  background-color: #1565c0;
+}
+
+.round2-table-wrapper {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 1.5rem;
+  overflow-x: auto;
+}
+
+.round2-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.round2-table th,
+.round2-table td {
+  border: 1px solid #e0e0e0;
+  padding: 0.75rem 1rem;
+  text-align: left;
+}
+.round2-table th {
+  background: #f5f5f5;
+  font-weight: 600;
+}
+.round2-table tr:nth-child(even) {
+  background: #fafafa;
+}
+
+/* Title above divider */
+.round2-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0px;
+  text-align: left;
+  border-bottom: 3px solid #333;
+  padding-bottom: 0px;
+  width: 100%;
+  margin-top: 0px;
+  box-sizing: border-box;
+}
+
 
 /* Register button */
 .register-btn {
