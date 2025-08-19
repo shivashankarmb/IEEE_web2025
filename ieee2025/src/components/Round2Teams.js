@@ -1,6 +1,5 @@
-
-import React, { useState } from 'react';
-import './Round2Teams.css';
+import React, { useState } from "react";
+import "./Round2Teams.css";
 
 const selectedTeams = [
   { team: "She Builds", member: "Misba Saleha", college: "Vidyavardhaka College of Engineering, Gokulam 3rd stage, Mysore" },
@@ -42,37 +41,46 @@ const selectedTeams = [
 
 function Round2Teams() {
   const registerLink = "https://forms.gle/Um7k7b1yYHhDiije8";
+  const nocLink = "https://raw.githubusercontent.com/shivashankarmb/IEEE_web2025/main/ieee2025/src/assets/NO%20OBJECTION%20CERTIFICATE_Format_Electrothon.docx"; // 👉 Replace with your actual NOC file link
   const [showTable, setShowTable] = useState(false);
 
   return (
     <div className="round2-container">
-      {/* Title above line */}
+      {/* Title */}
       <h2 className="round2-title">2nd Round Registration And Guidelines</h2>
       <hr className="divider" />
 
+      {/* Buttons Row */}
       <div className="round2-buttons-row">
+        {/* Register */}
         <a href={registerLink} target="_blank" rel="noopener noreferrer">
-          <button className="register-btn">Click to REGISTER</button>
+          <button className="register-btn small-btn">Click to REGISTER</button>
         </a>
-        <button className="register-btn" onClick={() => setShowTable(!showTable)} style={{marginLeft: '20px'}}>
+
+        {/* Selected Teams */}
+        <button
+          className="register-btn small-btn"
+          onClick={() => setShowTable(!showTable)}
+        >
           Selected Teams
         </button>
+
+        {/* NOC */}
+        <a href={nocLink} download>
+          <button className="noc-btn small-btn">Download NOC Template</button>
+        </a>
       </div>
 
-      {/* Show congratulatory message and table together when button is clicked */}
+      {/* Show congratulatory message + table */}
       {showTable && (
         <div className="round2-table-wrapper congratulatory-table">
-          <div className="round2-message congratulatory" style={{marginBottom: '1.2rem'}}>
-            <span role="img" aria-label="trophy" style={{fontSize: '1.5em', marginRight: '8px'}}>🏆</span>
-            <span>
-              Congratulations for the following 35 teams for being selected for ROUND-2. Notification has been sent to your mails. Do the registration on or before 20th August 2025 before 5 PM. If any team is not completing the registration before the deadline, the waitlisted teams get the opportunity for the registration.
-            </span>
+          <div className="round2-message congratulatory">
+            🏆 Congratulations to the following 35 teams for being selected for
+            ROUND-2. Please complete registration before <b>20th August 2025, 5 PM</b>.
+            If not, waitlisted teams will be given the opportunity.
           </div>
-          <div className="round2-table-title">
-            <span role="img" aria-label="confetti" style={{fontSize: '1.3em', marginRight: '6px'}}>🎉</span>
-            Selected Teams for Round-2
-            <span role="img" aria-label="confetti" style={{fontSize: '1.3em', marginLeft: '6px'}}>🎉</span>
-          </div>
+
+          <div className="round2-table-title">🎉 Selected Teams for Round-2 🎉</div>
           <table className="round2-table ieee-members-table congratulatory-table">
             <thead>
               <tr>

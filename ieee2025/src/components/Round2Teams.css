@@ -18,6 +18,29 @@
     max-width: 260px;
   }
 }
+/* Existing styles ... unchanged */
+
+/* New NOC Button Styling */
+.noc-btn {
+  position: relative;
+  margin-top: 10px;
+  background: #7ddcfc;
+  color: #000;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.noc-btn:hover {
+  background-color: #f0b815;
+}
+
 /* Selected Teams button below message, right aligned */
 .round2-action-btn-below {
   width: 100%;
