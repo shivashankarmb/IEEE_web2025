@@ -19,6 +19,30 @@
   }
 }
 /* Existing styles ... unchanged */
+/* Flex split layout */
+.round2-split-section {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.round2-split-section .left-side {
+  flex: 1;
+}
+
+.round2-split-section .right-side {
+  flex: 1;
+}
+
+/* Make responsive for mobile */
+@media (max-width: 992px) {
+  .round2-split-section {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
 
 /* New NOC Button Styling */
 .noc-btn {
@@ -35,10 +59,14 @@
   text-decoration: none;
   display: inline-block;
   transition: background-color 0.3s ease;
+
+  /* 🔥 Added blink animation */
+  animation: blink 2s infinite;
 }
 
 .noc-btn:hover {
   background-color: #f0b815;
+  animation: none; /* stop blinking on hover */
 }
 
 /* Selected Teams button below message, right aligned */

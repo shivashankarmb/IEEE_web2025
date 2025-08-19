@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Round2Teams.css";
 
 const selectedTeams = [
@@ -42,7 +42,6 @@ const selectedTeams = [
 function Round2Teams() {
   const registerLink = "https://forms.gle/Um7k7b1yYHhDiije8";
   const nocLink = "https://raw.githubusercontent.com/shivashankarmb/IEEE_web2025/main/ieee2025/src/assets/NO%20OBJECTION%20CERTIFICATE_Format_Electrothon.docx";
-  const [activeSection, setActiveSection] = useState(null); // 'teams' or 'guidelines'
 
   return (
     <div className="round2-container">
@@ -50,69 +49,25 @@ function Round2Teams() {
       <h2 className="round2-title">2nd Round Registration And Guidelines</h2>
       <hr className="divider" />
 
-      {/* Buttons Row */}
+      {/* Buttons Row (only Register & NOC remain) */}
       <div className="round2-buttons-row">
-        {/* Register */}
         <a href={registerLink} target="_blank" rel="noopener noreferrer">
           <button className="register-btn small-btn">Click to REGISTER</button>
         </a>
-
-        {/* Selected Teams */}
-        <button
-          className="register-btn small-btn"
-          onClick={() => setActiveSection(activeSection === 'teams' ? null : 'teams')}
-        >
-          Selected Teams
-        </button>
-
-        {/* Guidelines for Round 2 */}
-        <button
-          className="register-btn small-btn"
-          onClick={() => setActiveSection(activeSection === 'guidelines' ? null : 'guidelines')}
-        >
-          Guidelines for Round 2
-        </button>
-
-        {/* NOC */}
         <a href={nocLink} download>
           <button className="noc-btn small-btn">Download NOC Template</button>
         </a>
       </div>
-      {/* Guidelines Section */}
-  {activeSection === 'guidelines' && (
-        <div className="guidelines-section content-section">
-          <h2 className="section-title">📋 IMPORTANT Guidelines for the participants for ROUND-2</h2>
-          <ul className="guidelines-list">
-            <li>Round-2 of the competition will be conducted offline at BNM Institute of Technology.</li>
-            <li>Registration for Round-2 is mandatory. Participants must complete the payment and register through the Google Form.<br /><b>👉 Registration Link:</b> <a href="https://forms.gle/Um7k7b1yYHhDiije8" target="_blank" rel="noopener noreferrer">https://forms.gle/Um7k7b1yYHhDiije8</a></li>
-            <li>All the participants should bring their Institution ID card</li>
-            <li>Participants are required to bring their own components needed for building the hardware prototype.</li>
-            <li>Pre-built prototypes or models are strictly prohibited in the competition.</li>
-            <li>If additional components are required, the organizing team may help procure them from vendors. However, the cost must be borne by the participants themselves.</li>
-            <li>The following facilities will be provided at the venue: CRO, Multimeter, RPS, and Soldering Station.</li>
-            <li>Internet access, workspace, and meals (breakfast, lunch, and refreshments) will be provided.</li>
-            <li>Once a team enters the campus and begins building their hardware, they will not be permitted to leave the venue for any reason.</li>
-            <li>Transportation expenses will not be covered by the organizing team.</li>
-            <li>Teams are solely responsible for procuring all necessary components and materials for prototype development. We strongly encourage thorough preparation in advance.</li>
-            <li>Each team must submit a 'No Objection Certificate (NOC)' signed by the Head of the Institution. A template is available on the website.</li>
-            <li>Accommodation will be provided only to outstation teams (outside Bangalore). Teams requiring accommodation must complete the registration payment at the earliest and send a confirmation email to pesieeebnmit@gmail.com. Accommodation will be arranged subject to availability.</li>
-            <li>Participants are expected to uphold a high standard of professionalism, respect, and sportsmanship throughout the event.</li>
-          </ul>
-          <p className="center-text" style={{marginTop: '18px'}}>
-            We eagerly look forward to your impactful and innovative participation in Electrothon 2025.
-          </p>
-        </div>
-      )}
 
-      {/* Show congratulatory message + table */}
-  {activeSection === 'teams' && (
-        <div className="round2-table-wrapper congratulatory-table">
+      {/* Flex Layout: Teams (Left) + Guidelines (Right) */}
+      <div className="round2-split-section">
+        {/* Selected Teams */}
+        <div className="round2-table-wrapper congratulatory-table left-side">
           <div className="round2-message congratulatory">
             🏆 Congratulations to the following 35 teams for being selected for
-            ROUND-2. Please complete registration before <b>20th August 2025, 5 PM</b>.
+            ROUND-2. Please complete registration before 20th August 2025, 5 PM
             If not, waitlisted teams will be given the opportunity.
           </div>
-
           <div className="round2-table-title">🎉 Selected Teams for Round-2 🎉</div>
           <table className="round2-table ieee-members-table congratulatory-table">
             <thead>
@@ -133,7 +88,29 @@ function Round2Teams() {
             </tbody>
           </table>
         </div>
-      )}
+
+        {/* Guidelines */}
+        <div className="guidelines-section content-section right-side">
+          <h2 className="section-title">📋 IMPORTANT Guidelines for the participants for ROUND-2</h2>
+          <ul className="guidelines-list">
+            <li>Round-2 of the competition will be conducted offline at BNM Institute of Technology.</li>
+            <li>Registration for Round-2 is mandatory. Participants must complete the payment and register through the Google Form.<br /><b>👉 Registration Link:</b> <a href={registerLink} target="_blank" rel="noopener noreferrer">{registerLink}</a></li>
+            <li>All the participants should bring their Institution ID card</li>
+<li><b>The registration amount will not be refunded under any circumstances as per the regulations of the event</b></li>
+            <li>Participants are required to bring their own components needed for building the hardware prototype.</li>
+            <li>Pre-built prototypes or models are strictly prohibited in the competition.</li>
+            <li>If additional components are required, the organizing team may help procure them from vendors. However, the cost must be borne by the participants themselves.</li>
+            <li>The following facilities will be provided at the venue: CRO, Multimeter, RPS, and Soldering Station.</li>
+            <li>Internet access, workspace, and meals (breakfast, lunch, and refreshments) will be provided.</li>
+            <li>Once a team enters the campus and begins building their hardware, they will not be permitted to leave the venue for any reason.</li>
+            <li>Transportation expenses will not be covered by the organizing team.</li>
+            <li>Teams are solely responsible for procuring all necessary components and materials for prototype development. We strongly encourage thorough preparation in advance.</li>
+            <li>Each team must submit a 'No Objection Certificate (NOC)' signed by the Head of the Institution.</li>
+            <li>Accommodation will be provided only to outstation teams (outside Bangalore). Teams requiring accommodation must complete the registration payment at the earliest and send a confirmation email to pesieeebnmit@gmail.com.</li>
+            <li>Participants are expected to uphold a high standard of professionalism, respect, and sportsmanship throughout the event.</li>
+          </ul>
+        </div>
+      </div>
     </div>
   );
 }
