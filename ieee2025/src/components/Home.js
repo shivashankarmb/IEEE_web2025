@@ -57,7 +57,7 @@ function Home() {
         {/* Scrolling Registration Deadline Message */}
         <div className="registration-marquee">
           <span className="scroll-text">
-            📢 16 Aug is the last date to submit the Abstract
+            📢 22 August is the last date to register for 2nd Round
           </span>
         </div>
 
