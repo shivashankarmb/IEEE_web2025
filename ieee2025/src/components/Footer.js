@@ -80,17 +80,7 @@ function Footer() {
         {/* Developers */}
         <div className="footer-section">
           <h3>Website developed by</h3>
-          <p>
-            <a
-              href="https://www.linkedin.com/in/saishivram-v" // <-- Replace with actual link
-              target="_blank"
-              rel="noopener noreferrer"
-              className="highlight"
-            >
-               <FaLinkedin />
-          
-            </a>
-          </p>
+         
           <p>
             <a
               href="https://www.linkedin.com/in/shivashankar-mb-1171b626b/" // <-- Replace with actual link
