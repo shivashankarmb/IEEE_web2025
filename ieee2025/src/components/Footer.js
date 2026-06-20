@@ -88,7 +88,7 @@ function Footer() {
               className="highlight"
             >
                <FaLinkedin />
-              V Saishivram 
+          
             </a>
           </p>
           <p>
